@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rutas</title>
+</head>
+
+<body ng-app="rutasApp">
+    <h1>Rutas</h1>
+
+    <div ui-view>
+
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="../js/angular-ui-router.min.js"></script>
+
+    <script>
+        angular
+            .module('rutasApp', ['ui.router'])
+            .config(function ($stateProvider, $urlRouterProvider) {
+
+
+                $urlRouterProvider.otherwise('/prueba')
+
+                $stateProvider
+
+                    .state('prueba', {
+                        url: '/prueba',
+                        template: '<h1>hola mundo </h1>'
+                    })
+                    .state('usuarios', {
+                        url: '/users',
+                        template: '<h1>Listado de usuarios </h1> <div ui-view> </div> '
+                    })
+                    .state('usuarios.listado', {
+                        url: '/all',
+                        template: '<ul><li> Pepe </li></ul>'
+                    })
+
+            })
+    </script>
+</body>
+
+</html>

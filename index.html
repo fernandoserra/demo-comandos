@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Terminos</title>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--<link rel="SHORTCUT ICON" href="diseno/favicon.ico">-->
+</head>
+
+<body ng-app="MyApp">
+        <div ng-controller="AppCtrl as Ctrl" layout="column" style="height:100%;" md-theme="{{dynamicTheme}}" md-theme-watch>
+
+                <md-toolbar layout="row" id="f_m">
+                    <div class="md-toolbar-tools">
+                        <md-button ng-click="toggleLeft()" class="md-icon-button" hide-gt-md>
+                            <md-icon>
+                                <i class="material-icons i_fs">&#xE5D2;</i>
+                            </md-icon>
+                            <md-tooltip md-direction="bottom">Menu</md-tooltip>
+                        </md-button>
+            
+                        <span class="md-flex" hide show-gt-md>
+                            <!-- <img src="diseno/logo_dashboard.png" class="md-avatar" />-->
+                        </span>
+            
+                        <md-divider></md-divider>
+            
+                        <md-button class="md-icon-button" aria-label="Actualizar" hide-xs>
+                            <md-icon>
+                                <i class="material-icons i_fs">&#xE86A;</i>
+                            </md-icon>
+                            <md-tooltip md-direction="bottom">Actualizar</md-tooltip>
+                        </md-button>
+            
+                        <div flex>
+                            <center>
+                                <div ng-show='stateIsLoading'>
+                                    <md-progress-circular class="md-accent" md-diameter="30"></md-progress-circular>
+                                </div>
+                            </center>
+                        </div>
+            
+                        <md-divider></md-divider>
+            
+                    </div>
+            
+                    <md-menu md-position-mode="target-right target" layout-align="center right">
+                        <md-button ng-click="$mdOpenMenu()">
+                            <img ng-src="{{datos_img}}" style="width: 40px; height: 40px; -webkit-box-flex: 0;
+                                        -webkit-flex: none;
+                                        flex: none; border-radius: 50%;
+                                        box-sizing: content-box; float: left; background-color: #fdfdfd;" />
+            
+                            <!--  {{datos_usuario}}-->
+                        </md-button>
+                        <md-menu-content width="4">
+            
+                            <md-menu-item>
+                                <md-button href="">
+                                    <md-icon>
+                                        <i class="material-icons i_f">&#xE8A6;</i>
+                                    </md-icon>Mi perfil
+                                </md-button>
+                            </md-menu-item>
+            
+                            <md-menu-item>
+                                <md-button onclick="launchFullScreen(document.documentElement);">
+                                    <md-icon>
+                                        <i class="material-icons i_f">&#xE5D0;</i>
+                                    </md-icon>Pantalla completa
+                                </md-button>
+                            </md-menu-item>
+            
+                            <md-menu-divider></md-menu-divider>
+            
+                            <md-menu-item>
+                                <md-button href="">
+                                    <md-icon>
+                                        <i class="material-icons i_f">&#xE879;</i>
+                                    </md-icon>Salir del sistema
+                                </md-button>
+                            </md-menu-item>
+            
+                        </md-menu-content>
+                    </md-menu>
+            
+                    <md-button ng-click="toggleRight()" ng-hide="isOpenRight()">
+                        <md-icon>
+                            <i class="material-icons i_fs">&#xE5C3;</i>
+                        </md-icon>
+                    </md-button>
+            
+                </md-toolbar>
+            
+            
+            
+                <section layout="row" flex>
+                    <!--style="background-color: #1c1464; color:#fff; font-family:'Seravek Medium';"-->
+                    <md-sidenav id="mside"  class="md-sidenav-left"
+                        md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" md-whiteframe="4">
+                        <md-content ng-controller="LeftCtrl" > <!--style="background-color: #1c1464; color:#fff;"-->
+                            
+                                <div layout="column">
+                                        <md-toolbar class="md-theme-light" hide-gt-md>
+                                            <div layout="row" layout-align="start center">
+                                                <h1 class="md-toolbar-tools">Menu</h1>
+                                                <span flex></span>
+                                    
+                                                <md-button ng-click="close()" class="md-icon-button">
+                                                    <i class="material-icons">clear</i>
+                                                </md-button>
+                                    
+                                            </div>
+                                        </md-toolbar>
+                                    
+                                        <md-list-item href="#/git">
+                                            <md-icon>
+                                                <i class="material-icons i_f">&#xE88A;</i>
+                                            </md-icon>
+                                            <span flex>GIT</span>
+                                        </md-list-item>
+                                        
+                                        <md-list-item href="#/linux">
+                                            <md-icon>
+                                                <i class="material-icons i_f">&#xE88A;</i>
+                                            </md-icon>
+                                            <span flex>LINUX</span>
+                                        </md-list-item>
+                                    
+                                     
+                                     
+                                     
+                                    
+                                    
+                                    
+                                    
+                                    </div>
+                            <!--layout-padding-->
+                            <!--     
+                                <div ng-switch="{{rol}}">
+                                    <div ng-switch-when="1">
+                                        <div ng-include src="'templates/menuAdmin.html'"></div>	
+                                    </div>
+                                    <div ng-switch-when="3">
+                                        <div ng-include src="'templates/menuEjecutivoVentas.html'"></div>	
+                                    </div>
+                                    <div ng-switch-when="4">
+                                        <div ng-include src="'templates/menuAdminCondominio.html'"></div>	
+                                    </div>
+                                    <div ng-switch-when="5">
+                                        <div ng-include src="'templates/menuPropietario.html'"></div>	
+                                    </div>
+                                    <div ng-switch-when="6">
+                                        <div ng-include src="'templates/menuConstructora.html'"></div>	
+                                    </div>
+                                    <div ng-switch-when="9">
+                                        <div ng-include src="'templates/menuEjecutivoNegocios.html'"></div>	
+                                    </div>
+                                    <div ng-switch-when="10">
+                                        <div ng-include src="'templates/menuLicitaciones.html'"></div>	
+                                    </div>
+                                </div>
+                            -->
+            
+                        </md-content>
+                    </md-sidenav>
+            
+                    <md-content flex>
+                   
+                        <div ui-view></div>
+                    </md-content>
+                    
+            
+            
+                    <!-- menu derecho-->
+                    <md-sidenav class="md-sidenav-right md-whiteframe-4dp" md-component-id="right">
+            
+                        <md-content ng-controller="RightCtrl">
+                            <!--layout-padding-->
+                            <md-toolbar class="md-theme-light">
+                                <div layout="row" layout-align="start center">
+                                    <h1 class="md-toolbar-tools">
+                                        <i class="material-icons">settings</i>Opciones</h1>
+                                    <span flex></span>
+            
+                                    <md-button ng-click="close()" class="md-icon-button">
+                                        <i class="material-icons">clear</i>
+                                    </md-button>
+            
+                                </div>
+                            </md-toolbar>
+            
+            
+                            <!-- aqui colocar tabs -->
+                            <!--<div ng-switch="{{rol}}">
+                                        <div ng-switch-when="1">
+                                            <div ng-include src="'templates/menu2.html'"></div>	
+                                        </div>
+                                        <div ng-switch-when="4">
+                                            <div ng-include src="'templates/menu2AdminCondominio.html'"></div>	
+                                        </div>
+                                        <div ng-switch-when="5">
+                                            <div ng-include src="'templates/menu2Condominio.html'"></div>	
+                                        </div>
+                                        <div ng-switch-when="6">
+                                            <div ng-include src="'templates/menu2.html'"></div>	
+                                        </div>
+                                    </div>-->
+                            <!-- aqui colocar tabs -->
+            
+                        </md-content>
+            
+                        <md-button class="md-fab md-mini md-primary" style="background-color: #4caf50" ng-click="dynamicTheme = 'verde'">
+                            <md-icon>
+                                <i class="material-icons">brush</i>
+                            </md-icon>
+                        </md-button>
+            
+                        <md-button class="md-fab md-mini md-primary" style="background-color: #3f51b5" ng-click="dynamicTheme = 'ind'">
+                            <md-icon>
+                                <i class="material-icons">brush</i>
+                            </md-icon>
+                        </md-button>
+            
+                        <md-button class="md-fab md-mini md-primary" style="background-color: #9c27b0" ng-click="dynamicTheme = 'purpura'">
+                            <md-icon>
+                                <i class="material-icons">brush</i>
+                            </md-icon>
+                        </md-button>
+            
+                        <md-button class="md-fab md-mini md-primary" style="background-color: #607d8b" ng-click="dynamicTheme = 'oscuro'">
+                            <md-icon>
+                                <i class="material-icons">brush</i>
+                            </md-icon>
+                        </md-button>
+            
+                        <md-button class="md-fab md-mini md-primary" style="background-color: #ffffff" ng-click="dynamicTheme = 'blanco'">
+                            <md-icon>
+                                <i class="material-icons">brush</i>
+                            </md-icon>
+                        </md-button>
+            
+                    </md-sidenav>
+                    <!-- f menu derecho-->
+            
+                </section>
+            
+            
+            
+            
+            </div>
+
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+    <script src="js/angular-ui-router.min.js"></script>
+    <!-- Angular Material Library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    <!-- Your application bootstrap  -->
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
