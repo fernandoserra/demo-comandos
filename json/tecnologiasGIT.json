@@ -1,0 +1,21 @@
+{
+    "tecnologia": [
+        {
+            "nombre": "GIT",
+            "lista": {
+                "iniciando repositorio": {
+                    "comando": "git init",
+                    "descripcion": "Iniciamos GIT en la carpeta donde esta el proyecto"
+                },
+                "clonando repositorio": {
+                    "comando": "git clone <url>",
+                    "descripcion": "Clonamos el repositorio de github o bitbucket etc."
+                },
+                "añadimos archivos": {
+                    "comando": "git add .",
+                    "descripcion": "Añadimos todos los archivos para el commit"
+                }
+            }
+        }
+    ]
+}

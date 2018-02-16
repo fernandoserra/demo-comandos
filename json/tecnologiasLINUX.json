@@ -1,0 +1,22 @@
+{
+    "tecnologia":[
+        {
+            "nombre":"linux",
+            "lista":{
+                "apagar":{
+                    "comando":"sudo shutdown",
+                    "descripcion":"Apaga el sistema"
+                },
+                "reiniciar":{
+                    "comando":"sudo reboot",
+                    "descripcion":"Reinicia el sistema"
+                },
+                "eliminar carpeta":{
+                    "comando":"sudo rm -R <directorio>",
+                    "descripcion":"Borra carpeta con archivos dentro"
+                }
+                
+            }
+        }
+    ]
+}

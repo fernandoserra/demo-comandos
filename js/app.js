@@ -67,11 +67,12 @@ angular
   
       .state('git',{ 
         url:'/git', 
-        templateUrl : 'templates/git.html'
+        templateUrl : 'templates/git.html',
+        controller  : 'terminosController'
       })
 
       .state('linux',{ 
-        url:'/linux', 
+        url:'linux', 
         templateUrl : 'templates/linux.html'
       })
 

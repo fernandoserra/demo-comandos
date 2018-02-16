@@ -1,3 +1,13 @@
 <md-content layout-padding>
-    <h2>GIT</h2>
+    <h2>GIT.</h2>
+
+
+    ver: {{msjp}}
+    <md-list>   
+
+        <md-list-item class="md-2-line animate-repeat" ng-repeat="usuario in usuarios"  
+        ng-click="null" id="d{{usuario.id_usuario}}" >
+        <p>{{usuario.estatus}}</p>
+        </md-list-item>
+    </md-list>
 </md-content>
