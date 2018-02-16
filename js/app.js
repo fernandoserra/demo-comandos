@@ -72,7 +72,7 @@ angular
       })
 
       .state('linux',{ 
-        url:'linux', 
+        url:'/linux', 
         templateUrl : 'templates/linux.html'
       })
 
