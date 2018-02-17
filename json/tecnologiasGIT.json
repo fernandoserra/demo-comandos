@@ -2,113 +2,112 @@
     "tecnologia": [
         {
             "nombre": "GIT",
-            "lista": {
-                "add": {
+            "lista": [
+                {
                     "comando": "add",
                     "descripcion": "Añadimos todos los archivos para el commit"
                 },
-                "added": {
+                {
                     "comando": "added",
                     "descripcion": ""
                 },
-                "alias": {
+                {
                     "comando": "alias",
                     "descripcion": ""
                 },
-                "ancestry": {
+                {
                     "comando": "ancestry",
                     "descripcion": ""
                 },
-                "annotate": {
+                {
                     "comando": "alias",
                     "descripcion": ""
                 },
-                "assert-fail": {
+                {
                     "comando": "assert-fail",
                     "descripcion": ""
                 },
-                "bash-completion": {
+                {
                     "comando": "bash-completion",
                     "descripcion": ""
                 },
-                "bind": {
+                {
                     "comando": "bind",
                     "descripcion": ""
                 },
-                "branch": {
+                {
                     "comando": "branch",
                     "descripcion": ""
                 },
-                "branches": {
+                {
                     "comando": "branches",
                     "descripcion": ""
                 },
-                "break-lock": {
+                {
                     "comando": "break-lock",
                     "descripcion": ""
                 },
-                "bug-url": {
+                {
                     "comando": "bug-url",
                     "descripcion": ""
                 },
-                "bundle-info": {
+                {
                     "comando": "bundle-info",
                     "descripcion": ""
                 },
-                "bundle-revisions": {
+                {
                     "comando": "bundle-revisions",
                     "descripcion": ""
                 },
-                "cat": {
+                {
                     "comando": "cat",
                     "descripcion": ""
                 },
-                "cat-revision": {
+                {
                     "comando": "cat-revision",
                     "descripcion": ""
                 },
-                "check": {
+                {
                     "comando": "check",
                     "descripcion": ""
                 },
-                "checkout": {
+                {
                     "comando": "checkout",
                     "descripcion": ""
                 },
-                "clean-tree": {
+                {
                     "comando": "clean-tree",
                     "descripcion": ""
                 },
-                "commit": {
+                {
                     "comando": "commit",
                     "descripcion": ""
                 },
-                "config": {
+                {
                     "comando": "config",
                     "descripcion": ""
                 },
-                "conflicts": {
+                {
                     "comando": "conflicts",
                     "descripcion": ""
                 },
-                "deleted": {
+                {
                     "comando": "deleted",
                     "descripcion": ""
                 },
-
-                "init": {
+                {
                     "comando": "init",
                     "descripcion": "Iniciamos GIT en la carpeta donde esta el proyecto"
                 },
-                "clone": {
+                {
                     "comando": "git clone <url>",
                     "descripcion": "Clonamos el repositorio de github o bitbucket etc."
                 },
-                "": {
+                {
                     "comando": "git add .",
                     "descripcion": ""
                 }
-            }
+            ]
         }
     ]
 }

@@ -1,7 +1,6 @@
 var app = angular
     .module('MyApp')
     .controller('terminosController', function ($scope, $mdDialog, terminosServices) {
-        $scope.msjp="hola mundo";
         console.log("listando terminos ")
        
         $scope.usuarios = [];
@@ -9,8 +8,8 @@ var app = angular
        
         terminosServices.getTerminos()
             .then(function successCallback(response) {
-                $scope.usuarios = response.data.lista;
-                console.log(response.data)
+                $scope.usuarios = response.data.tecnologia["0"].lista;
+                console.log(response.data.tecnologia["0"].lista)
                 $scope.loading_usuarios = false;
             }, function errorCallback(response) {
                 $scope.loading_usuarios = false;
