@@ -6,12 +6,8 @@
             <strong>GIT</strong> / Listar Terminos
         </div>
         <div flex="50" style="text-align: right;">
-            <!--<a href="" class='icon_barra'>
-                <md-tooltip md-direction="down">Sugerencia</md-tooltip>
-                <md-icon>contact_mail</md-icon>
-            </a>-->
-        </div>
 
+        </div>
     </div>
 
 
@@ -22,42 +18,68 @@
             <md-icon class="icon s18 md-default-theme md-font material-icons icon-magnify">
                 <i class="material-icons">&#xE8B6;</i>
             </md-icon>
-
             <input type="text" class="inp_buscar" ng-model="buscador" placeholder="Buscar">
-
         </div>
 
 
         <md-list>
-            <div ng-show="loading_usuarios">
+            <div ng-show="loading_terminos">
                 <center>
                     <p>Cargando...</p>
                 </center>
             </div>
+            <div ng-show="terminos.length > 0" class="animated example-animate-container">
+                <md-list-item class="md-2-line animate-repeat" ng-repeat="termino in terminos | filter:buscador" ng-click="null">
 
-            <md-list-item class="md-2-line animate-repeat" ng-repeat="usuario in usuarios" ng-click="null" id="{{usuario.id_usuario}}">
-               
+                    <div class="md-list-item-text" layout="column">
+                        <h3>
+                            <md-icon>
+                                <i class="material-icons">&#xE5CC;</i>
+                            </md-icon> {{termino.comando}}
+                        </h3>
+                    </div>
 
-                <div class="md-list-item-text" layout="column">
-                    <h3>   <md-icon>
-                        <i class="material-icons">&#xE5CC;</i>
-                    </md-icon> {{usuario.comando}}
-                </h3>
-                
-                </div>
-               
-                <md-button class="md-fab md-mini md-primary" ng-click="showPrerenderedDialog(usuario)">
-                    <md-icon>
-                        <i class="material-icons">search</i>
-                    </md-icon>
-                </md-button>
+                    <md-button class="md-fab md-mini md-primary" ng-click="showPrerenderedDialog(termino)">
+                        <md-icon>
+                            <i class="material-icons">search</i>
+                        </md-icon>
+                    </md-button>
 
-                <md-divider></md-divider>
+                    <md-divider></md-divider>
 
-
-            </md-list-item>
+                </md-list-item>
+            </div>
 
         </md-list>
 
     </div>
+
+    <div style="visibility: hidden">
+        <div class="md-dialog-container" id="myDialog">
+            <md-dialog flex="50">
+                <md-toolbar>
+                    <div class="md-toolbar-tools">
+                        <p>Detalles</p>
+                        <span flex></span>
+                        <md-button class="md-icon-button" ng-click="closeDialog()">
+                            <md-icon>close</md-icon>
+                        </md-button>
+                    </div>
+                </md-toolbar>
+
+                <md-dialog-content layout-padding>
+                    <center>
+                        <h2> Comando: {{terminoDet.comando}} </h2>
+                    </center>  
+                    
+                    <div layout="row">
+                        <strong>Descripción: </strong>   {{terminoDet.descripcion}}                        
+                    </div>
+
+                </md-dialog-content>
+                <md-dialog-actions></md-dialog-actions>
+            </md-dialog>
+        </div>
+    </div>
+
 </md-content>

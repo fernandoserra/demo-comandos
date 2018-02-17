@@ -1,18 +1,28 @@
 var app = angular
     .module('MyApp')
     .controller('terminosController', function ($scope, $mdDialog, terminosServices) {
-        console.log("listando terminos ")
-       
-        $scope.usuarios = [];
-        $scope.loading_usuarios = true;
-       
+
+        $scope.terminos = [];
+        $scope.loading_terminos = true;
         terminosServices.getTerminos()
             .then(function successCallback(response) {
-                $scope.usuarios = response.data.tecnologia["0"].lista;
+                $scope.terminos = response.data.tecnologia["0"].lista;
                 console.log(response.data.tecnologia["0"].lista)
-                $scope.loading_usuarios = false;
+                $scope.loading_terminos = false;
             }, function errorCallback(response) {
-                $scope.loading_usuarios = false;
+                $scope.loading_terminos = false;
             });
+
+
+        $scope.showPrerenderedDialog = function (termino) {
+            $scope.terminoDet = termino
+            $mdDialog.show({
+                contentElement: '#myDialog',
+                parent: angular.element(document.body),
+                clickOutsideToClose: true
+            });
+        };
+
+        $scope.closeDialog=function(){ $mdDialog.hide(); }
 
     })

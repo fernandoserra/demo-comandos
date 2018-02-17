@@ -5,108 +5,210 @@
             "lista": [
                 {
                     "comando": "add",
-                    "descripcion": "Añadimos todos los archivos para el commit"
+                    "categoria":"",
+                    "descripcion": "Añadimos todos los archivos para el commit",
+                    "show":true
                 },
                 {
-                    "comando": "added",
-                    "descripcion": ""
+                    "comando": "am",
+                    "descripcion": "",
+                    "show":false
                 },
                 {
-                    "comando": "alias",
-                    "descripcion": ""
-                },
-                {
-                    "comando": "ancestry",
-                    "descripcion": ""
-                },
-                {
-                    "comando": "alias",
-                    "descripcion": ""
-                },
-                {
-                    "comando": "assert-fail",
-                    "descripcion": ""
-                },
-                {
-                    "comando": "bash-completion",
-                    "descripcion": ""
-                },
-                {
-                    "comando": "bind",
-                    "descripcion": ""
+                    "comando": "bisect",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
                 },
                 {
                     "comando": "branch",
-                    "descripcion": ""
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
                 },
+
+
                 {
-                    "comando": "branches",
-                    "descripcion": ""
-                },
-                {
-                    "comando": "break-lock",
-                    "descripcion": ""
-                },
-                {
-                    "comando": "bug-url",
-                    "descripcion": ""
-                },
-                {
-                    "comando": "bundle-info",
-                    "descripcion": ""
-                },
-                {
-                    "comando": "bundle-revisions",
-                    "descripcion": ""
-                },
-                {
-                    "comando": "cat",
-                    "descripcion": ""
-                },
-                {
-                    "comando": "cat-revision",
-                    "descripcion": ""
-                },
-                {
-                    "comando": "check",
-                    "descripcion": ""
+                    "comando": "bundle",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
                 },
                 {
                     "comando": "checkout",
-                    "descripcion": ""
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
                 },
                 {
-                    "comando": "clean-tree",
-                    "descripcion": ""
+                    "comando": "cherry-pick",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
                 },
+                {
+                    "comando": "citool",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
+                },
+                {
+                    "comando": "clean",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
+                },
+                {
+                    "comando": "clone",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
+                },
+
+
                 {
                     "comando": "commit",
-                    "descripcion": ""
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
                 },
                 {
-                    "comando": "config",
-                    "descripcion": ""
+                    "comando": "describe",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
                 },
                 {
-                    "comando": "conflicts",
-                    "descripcion": ""
+                    "comando": "diff",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
                 },
                 {
-                    "comando": "deleted",
-                    "descripcion": ""
+                    "comando": "fetch",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
+                },
+                {
+                    "comando": "format-patch",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
+                },
+                {
+                    "comando": "gc",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
+                },
+                {
+                    "comando": "grep",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
+                },
+                {
+                    "comando": "gui",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
                 },
                 {
                     "comando": "init",
-                    "descripcion": "Iniciamos GIT en la carpeta donde esta el proyecto"
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
+                },
+
+
+                {
+                    "comando": "gitk",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
                 },
                 {
-                    "comando": "git clone <url>",
-                    "descripcion": "Clonamos el repositorio de github o bitbucket etc."
+                    "comando": "log",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
                 },
                 {
-                    "comando": "git add .",
-                    "descripcion": ""
+                    "comando": "merge",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
+                },
+                {
+                    "comando": "mv",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
+                },
+                {
+                    "comando": "notes",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
+                },
+                {
+                    "comando": "pull",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
+                },
+                {
+                    "comando": "push",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
+                },
+                {
+                    "comando": "rebase",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
+                },
+                {
+                    "comando": "reset",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
+                },
+                {
+                    "comando": "revert",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                    
                 }
+
             ]
         }
     ]
