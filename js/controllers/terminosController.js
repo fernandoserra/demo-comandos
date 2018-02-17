@@ -9,7 +9,7 @@ var app = angular
        
         terminosServices.getTerminos()
             .then(function successCallback(response) {
-                $scope.usuarios = response.data;
+                $scope.usuarios = response.data.lista;
                 console.log(response.data)
                 $scope.loading_usuarios = false;
             }, function errorCallback(response) {
