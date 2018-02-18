@@ -27,14 +27,11 @@
                     "show":true
                     
                 },
-
-
                 {
                     "comando": "bundle",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
-                    
+                    "show":true  
                 },
                 {
                     "comando": "checkout",
@@ -48,165 +45,416 @@
                     "categoria":"",
                     "descripcion": "",
                     "show":true
-                    
                 },
                 {
                     "comando": "citool",
                     "categoria":"",
                     "descripcion": "",
                     "show":true
-                    
                 },
                 {
                     "comando": "clean",
                     "categoria":"",
                     "descripcion": "",
                     "show":true
-                    
                 },
                 {
                     "comando": "clone",
                     "categoria":"",
                     "descripcion": "",
                     "show":true
-                    
                 },
-
-
                 {
                     "comando": "commit",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
-                    
+                    "show":true  
                 },
                 {
                     "comando": "describe",
                     "categoria":"",
                     "descripcion": "",
                     "show":true
-                    
                 },
                 {
                     "comando": "diff",
                     "categoria":"",
                     "descripcion": "",
                     "show":true
-                    
                 },
                 {
                     "comando": "fetch",
                     "categoria":"",
                     "descripcion": "",
                     "show":true
-                    
                 },
                 {
                     "comando": "format-patch",
                     "categoria":"",
                     "descripcion": "",
                     "show":true
-                    
                 },
                 {
                     "comando": "gc",
                     "categoria":"",
                     "descripcion": "",
                     "show":true
-                    
                 },
                 {
                     "comando": "grep",
                     "categoria":"",
                     "descripcion": "",
                     "show":true
-                    
                 },
                 {
                     "comando": "gui",
                     "categoria":"",
                     "descripcion": "",
                     "show":true
-                    
                 },
                 {
                     "comando": "init",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
-                    
+                    "show":true  
                 },
-
-
                 {
                     "comando": "gitk",
                     "categoria":"",
                     "descripcion": "",
                     "show":true
-                    
                 },
                 {
                     "comando": "log",
                     "categoria":"",
                     "descripcion": "",
                     "show":true
-                    
                 },
                 {
                     "comando": "merge",
                     "categoria":"",
                     "descripcion": "",
                     "show":true
-                    
                 },
                 {
                     "comando": "mv",
                     "categoria":"",
                     "descripcion": "",
                     "show":true
-                    
                 },
                 {
                     "comando": "notes",
                     "categoria":"",
                     "descripcion": "",
                     "show":true
-                    
                 },
                 {
                     "comando": "pull",
                     "categoria":"",
                     "descripcion": "",
                     "show":true
-                    
                 },
                 {
                     "comando": "push",
                     "categoria":"",
                     "descripcion": "",
                     "show":true
-                    
                 },
                 {
                     "comando": "rebase",
                     "categoria":"",
                     "descripcion": "",
                     "show":true
-                    
                 },
                 {
                     "comando": "reset",
                     "categoria":"",
                     "descripcion": "",
                     "show":true
-                    
                 },
                 {
                     "comando": "revert",
                     "categoria":"",
                     "descripcion": "",
                     "show":true
+                },
+
+                {
+                    "comando": "rm",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true  
+                },
+                {
+                    "comando": "shortlog",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "show",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "stash",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "status",
+                    "categoria":"",
+                    "descripcion": "Mostrar el estado del árbol de trabajo",
+                    "show":true
+                },
+                {
+                    "comando": "submodule",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "tag",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true  
+                },
+                {
+                    "comando": "worktree",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "config",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
                     
+                },
+                {
+                    "comando": "fast-export",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "fast-import",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "filter-branch",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "mergetool",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "pack-refs",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "prune",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "reflog",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "remote",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "repack",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "replace",
+                    "categoria":"",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "annotate",
+                    "categoria":"Interrogadores",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "blame",
+                    "categoria":"Interrogadores",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "cherry",
+                    "categoria":"Interrogadores",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "count-objects",
+                    "categoria":"Interrogadores",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "difftool",
+                    "categoria":"Interrogadores",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "fsck",
+                    "categoria":"Interrogadores",
+                    "descripcion": "",
+                    "show":true  
+                },
+                {
+                    "comando": "get-tar-commit-id",
+                    "categoria":"Interrogadores",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "help",
+                    "categoria":"Interrogadores",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "instaweb",
+                    "categoria":"Interrogadores",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "merge-tree",
+                    "categoria":"Interrogadores",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "rerere",
+                    "categoria":"Interrogadores",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "rev-parse",
+                    "categoria":"Interrogadores",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "show-branch",
+                    "categoria":"Interrogadores",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "verify-commit",
+                    "categoria":"Interrogadores",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "verify-tag",
+                    "categoria":"Interrogadores",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "gitweb",
+                    "categoria":"Interrogadores",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "whatchanged",
+                    "categoria":"Interrogadores",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "archimport",
+                    "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "cvsexportcommit",
+                    "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "cvsimport",
+                    "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "cvsserver",
+                    "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
+                    "descripcion": "",
+                    "show":true  
+                },
+                {
+                    "comando": "imap-send",
+                    "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "p4",
+                    "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "quiltimport",
+                    "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "request-pull",
+                    "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "send-email",
+                    "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
+                    "descripcion": "",
+                    "show":true
+                },
+                {
+                    "comando": "svn",
+                    "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
+                    "descripcion": "",
+                    "show":true   
                 }
 
             ]

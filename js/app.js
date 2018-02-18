@@ -3,7 +3,6 @@ angular
   .config(function($stateProvider, $urlRouterProvider,$mdThemingProvider){
     //$mdThemingProvider.generateThemesOnDemand(true);
       
-   
     /*zzzzzzzzzzzz*/
     $mdThemingProvider.definePalette('amazingPaletteName', {
       '50': 'ffebee',
@@ -50,21 +49,13 @@ angular
     $mdThemingProvider.theme('blanco')
       .primaryPalette('amazingPaletteName')
       .accentPalette('blue')
-      /*.primaryPalette('brown')
-      
-      .warnPalette('red') */ 
-
+    
     $mdThemingProvider.setDefaultTheme('oscuro'); 
     $mdThemingProvider.alwaysWatchTheme(true);
 
-    $urlRouterProvider.otherwise('/prueba')
+    $urlRouterProvider.otherwise('/git')
     $stateProvider
-     
-      .state('prueba',{
-        url:'/prueba', 
-        template : '<h1>hola mundo </h1>' 
-      })
-  
+
       .state('git',{ 
         url:'/git', 
         templateUrl : 'templates/git.html',
@@ -73,10 +64,9 @@ angular
 
       .state('linux',{ 
         url:'/linux', 
-        templateUrl : 'templates/linux.html'
+        templateUrl : 'templates/linux.html',
+        controller  : 'terminosControllerLinux'
       })
-
-
        
   })
   

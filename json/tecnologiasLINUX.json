@@ -1,22 +1,39 @@
 {
-    "tecnologia":[
+    "tecnologia": [
         {
-            "nombre":"linux",
-            "lista":{
-                "apagar":{
-                    "comando":"sudo shutdown",
-                    "descripcion":"Apaga el sistema"
+            "nombre": "LINUX",
+            "lista": [
+                {
+                    "comando": "arch",
+                    "descripcion": "mostrar la arquitectura de la máquina (1)",
+                    "show":true
                 },
-                "reiniciar":{
-                    "comando":"sudo reboot",
-                    "descripcion":"Reinicia el sistema"
+                {
+                    "comando": "uname -m",
+                    "descripcion": "mostrar la arquitectura de la máquina (2)",
+                    "show":true
                 },
-                "eliminar carpeta":{
-                    "comando":"sudo rm -R <directorio>",
-                    "descripcion":"Borra carpeta con archivos dentro"
+                {
+                    "comando": "uname -r",
+                    "descripcion": "mostrar la versión del kernel usado. ",
+                    "show":true
+                },
+                {
+                    "comando": "dmidecode -q",
+                    "descripcion": "mostrar los componentes (hardware) del sistema",
+                    "show":true
+                },
+
+
+
+
+                {
+                    "comando": "date",
+                    "descripcion": "Mostrar la fecha del sistema",
+                    "show":true
                 }
-                
-            }
+
+            ]
         }
     ]
 }

@@ -1,10 +1,10 @@
 var app = angular
     .module('MyApp')
-    .controller('terminosController', function ($scope, $mdDialog, terminosServices) {
+    .controller('terminosControllerLinux', function ($scope, $mdDialog, terminosServices) {
 
-        $scope.terminos = [];
-        $scope.loading_terminos = true;
-        terminosServices.getTerminos()
+        $scope.terminos_linux = [];
+        $scope.loading_terminos_linux = true;
+        terminosServices.getTerminosLinux()
             .then(function successCallback(response) {
                 $scope.terminos = response.data.tecnologia["0"].lista;
                 console.log(response.data.tecnologia["0"].lista)

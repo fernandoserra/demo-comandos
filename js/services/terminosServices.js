@@ -8,6 +8,10 @@
       terminosServices.getTerminos = function () {
         return $http.get("https://fernandoserra.github.io/demo-terminos/json/tecnologiasGIT.json");
       };
+
+      terminosServices.getTerminosLinux = function () {
+        return $http.get("https://fernandoserra.github.io/demo-terminos/json/tecnologiasLINUX.json");
+      };
   
       return terminosServices;
   
