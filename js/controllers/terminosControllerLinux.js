@@ -10,7 +10,7 @@ var app = angular
                 console.log(response.data.tecnologia["0"].lista)
                 $scope.loading_terminos = false;
             }, function errorCallback(response) {
-                $scope.loading_terminos = false;
+                $scope.loading_terminos_linux = false;
             });
 
         $scope.showPrerenderedDialog = function (termino) {
