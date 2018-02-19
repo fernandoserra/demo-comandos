@@ -7,454 +7,621 @@
                     "comando": "add",
                     "categoria":"",
                     "descripcion": "Añadimos todos los archivos para el commit",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":"https://git-scm.com/book/es/v1/Git-en-entornos-distribuidos-Gestionando-un-proyecto"
                 },
                 {
                     "comando": "am",
-                    "descripcion": "",
-                    "show":false
+                    "categoria":"",
+                    "descripcion": "Aplicar parches recibidos por correo electronico",
+                    "show":true,
+                    "ejemplos":[],
+                    "url":"https://git-scm.com/book/es/v1/Git-en-entornos-distribuidos-Gestionando-un-proyecto"
+                },
+                {
+                    "comando": "archive",
+                    "categoria":"",
+                    "descripcion": "Crea un archivo del formato especificado que contiene la estructura de árbol para el árbol con nombre y lo escribe en el resultado estándar. Si se especifica <prefijo>, se antepone a los nombres de archivo en el archivo.",
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "bisect",
                     "categoria":"",
-                    "descripcion": "",
-                    "show":true
+                    "descripcion": " Búsqueda binaria. El comando bisect hace una búsqueda binaria a través de su historial de commits para ayudarle a identificar lo más rápidamente posible qué commit introdujo un problema ",
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "branch",
                     "categoria":"",
-                    "descripcion": "",
-                    "show":true
-                    
+                    "descripcion": "Lista, crea o elimina ramas",
+                    "show":true,
+                    "ejemplos":[
+                        { "ejemplo":"git branch <nombre-rama> # crea rama." },
+                        { "ejemplo":"git branch # lista ramas"},
+                        { "ejemplo":"git branch -d <rama> # elimina la rama"},
+                        { "ejemplo":"git branch -v # lista ramas mostrando último commit"},
+                        { "ejemplo":"git push origin --delete <branchName> # Elimina una rama del servidor "},
+                        { "ejemplo":"git checkout <nombre-rama> # cambiar a la rama especificada. "},
+                        { "ejemplo":"git checkout -b <nombre-rama> # crea y cambia de rama "},
+                        { "ejemplo":"git merge <rama> # Mezcla la rama actual con <rama>"}
+                    ],
+                    "url":""
                 },
                 {
                     "comando": "bundle",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true  
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""  
                 },
                 {
                     "comando": "checkout",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                     
                 },
                 {
                     "comando": "cherry-pick",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "citool",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "clean",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "clone",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "commit",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true  
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""  
                 },
                 {
                     "comando": "describe",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "diff",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "fetch",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "format-patch",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "gc",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "grep",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "gui",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "init",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true  
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""  
                 },
                 {
                     "comando": "gitk",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "log",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "merge",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "mv",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "notes",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "pull",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "push",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "rebase",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "reset",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "revert",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
 
                 {
                     "comando": "rm",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true  
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""  
                 },
                 {
                     "comando": "shortlog",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "show",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "stash",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "status",
                     "categoria":"",
                     "descripcion": "Mostrar el estado del árbol de trabajo",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "submodule",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "tag",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true  
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""  
                 },
                 {
                     "comando": "worktree",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "config",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                     
                 },
                 {
                     "comando": "fast-export",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "fast-import",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "filter-branch",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "mergetool",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "pack-refs",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "prune",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "reflog",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "remote",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "repack",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "replace",
                     "categoria":"",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "annotate",
                     "categoria":"Interrogadores",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "blame",
                     "categoria":"Interrogadores",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "cherry",
                     "categoria":"Interrogadores",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "count-objects",
                     "categoria":"Interrogadores",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "difftool",
                     "categoria":"Interrogadores",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "fsck",
                     "categoria":"Interrogadores",
                     "descripcion": "",
-                    "show":true  
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "get-tar-commit-id",
                     "categoria":"Interrogadores",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "help",
                     "categoria":"Interrogadores",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "instaweb",
                     "categoria":"Interrogadores",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "merge-tree",
                     "categoria":"Interrogadores",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "rerere",
                     "categoria":"Interrogadores",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "rev-parse",
                     "categoria":"Interrogadores",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "show-branch",
                     "categoria":"Interrogadores",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "verify-commit",
                     "categoria":"Interrogadores",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "verify-tag",
                     "categoria":"Interrogadores",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "gitweb",
                     "categoria":"Interrogadores",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "whatchanged",
                     "categoria":"Interrogadores",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "archimport",
                     "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "cvsexportcommit",
                     "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "cvsimport",
                     "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "cvsserver",
                     "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
                     "descripcion": "",
-                    "show":true  
+                    "show":true,
+                    "ejemplos":[],
+                    "url":"" 
                 },
                 {
                     "comando": "imap-send",
                     "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "p4",
                     "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "quiltimport",
                     "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "request-pull",
                     "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "send-email",
                     "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
                     "descripcion": "",
-                    "show":true
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
                 },
                 {
                     "comando": "svn",
                     "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
                     "descripcion": "",
-                    "show":true   
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""   
                 }
 
             ]
