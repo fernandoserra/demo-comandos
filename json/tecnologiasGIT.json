@@ -96,10 +96,12 @@
                 {
                     "comando": "clone",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "Clonando un repositorio existente.  Si deseas obtener una copia de un repositorio Git existente —por ejemplo, un proyecto en el que te gustaría contribuir— el comando que necesitas es git clone",
                     "show":true,
-                    "ejemplos":[],
-                    "url":""
+                    "ejemplos":[
+                        {"ejemplo":"git clone git://github.com/schacon/grit.git"}
+                    ],
+                    "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Obteniendo-un-repositorio-Git"
                 },
                 {
                     "comando": "commit",
@@ -128,9 +130,11 @@
                 {
                     "comando": "fetch",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "Recibiendo de tus repositorios remotos. Para recuperar datos de tus repositorios remotos puedes ejecutar:",
                     "show":true,
-                    "ejemplos":[],
+                    "ejemplos":[
+                        {"ejemplo":"git fetch [remote-name] "}
+                    ],
                     "url":""
                 },
                 {
@@ -168,10 +172,12 @@
                 {
                     "comando": "init",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "Inicializando un repositorio en un directorio existente",
                     "show":true,
-                    "ejemplos":[],
-                    "url":""  
+                    "ejemplos":[
+                        {"ejemplo":"git init"}
+                    ],
+                    "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Obteniendo-un-repositorio-Git"  
                 },
                 {
                     "comando": "gitk",
@@ -184,10 +190,14 @@
                 {
                     "comando": "log",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "Viendo el histórico de confirmaciones. Después de haber hecho varias confirmaciones, o si has clonado un repositorio que ya tenía un histórico de confirmaciones, probablemente quieras mirar atrás para ver qué modificaciones se han llevado a cabo. La herramienta más básica y potente para hacer esto es el comando git log.",
                     "show":true,
-                    "ejemplos":[],
-                    "url":""
+                    "ejemplos":[
+                        {"ejemplo":"git log"},
+                        {"ejemplo":"git log --stat #ver algunas estadísticas de cada confirmación"},
+                        {"ejemplo":"git log --pretty=oneline # modifica el formato de la salida  (short, full y fuller)"}
+                    ],
+                    "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Viendo-el-hist%C3%B3rico-de-confirmaciones"
                 },
                 {
                     "comando": "merge",
@@ -224,10 +234,12 @@
                 {
                     "comando": "push",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "Enviando a tus repositorios remotos. Cuando tu proyecto se encuentra en un estado que quieres compartir, tienes que enviarlo a un repositorio remoto.",
                     "show":true,
-                    "ejemplos":[],
-                    "url":""
+                    "ejemplos":[
+                        {"ejemplo":"git push origin master"}
+                    ],
+                    "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Trabajando-con-repositorios-remotos"
                 },
                 {
                     "comando": "rebase",
@@ -257,7 +269,7 @@
                 {
                     "comando": "rm",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "Eliminando archivos. Para eliminar un archivo de Git, debes eliminarlo de tus archivos bajo seguimiento (más concretamente, debes eliminarlo de tu área de preparación), y después confirmar. El comando git rm se encarga de eso, y también elimina el archivo de tu directorio de trabajo, para que no lo veas entre los archivos sin seguimiento.",
                     "show":true,
                     "ejemplos":[],
                     "url":""  
@@ -289,10 +301,10 @@
                 {
                     "comando": "status",
                     "categoria":"",
-                    "descripcion": "Mostrar el estado del árbol de trabajo",
+                    "descripcion": "Comprobando el estado de tus archivos.  Tu principal herramienta para determinar qué archivos están en qué estado es el comando git status.",
                     "show":true,
-                    "ejemplos":[],
-                    "url":""
+                    "ejemplos":[{"ejemplo":"git status"}],
+                    "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Guardando-cambios-en-el-repositorio"
                 },
                 {
                     "comando": "submodule",
@@ -384,12 +396,15 @@
                     "url":""
                 },
                 {
-                    "comando": "remote",
+                    "comando": "Para ver qué repositorios remotos tienes configurados, puedes ejecutar el comando git remote. Mostrará una lista con los nombres de los remotos que hayas especificado. Si has clonado tu repositorio, deberías ver por lo menos 'origin' —es el nombre predeterminado que le da Git al servidor del que clonaste—:",
                     "categoria":"",
                     "descripcion": "",
                     "show":true,
-                    "ejemplos":[],
-                    "url":""
+                    "ejemplos":[
+                        {"ejemplo":"git remote"},
+                        {"ejemplo":"git remote -v  (muestra la URL asociada a cada repositorio remoto)"}
+                    ],
+                    "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Trabajando-con-repositorios-remotos"
                 },
                 {
                     "comando": "repack",
