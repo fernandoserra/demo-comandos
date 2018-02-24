@@ -63,9 +63,12 @@
                 {
                     "comando": "checkout",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "El comando checkout se puede usar para crear ramas o cambiar entre ellas. Por ejemplo, el siguiente comando crea una nueva y se cambia a ella:",
                     "show":true,
-                    "ejemplos":[],
+                    "ejemplos":[
+                        {"ejemplo":"command git checkout -b <banch-name>"},
+                        {"ejemplo":"git checkout <branch-name> # Para cambiar de una rama a otra"}
+                    ],
                     "url":""
                     
                 },
@@ -106,10 +109,15 @@
                 {
                     "comando": "commit",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "Guardando cambios en el repositorio",
                     "show":true,
-                    "ejemplos":[],
-                    "url":""  
+                    "ejemplos":[
+                        {"ejemplo":"git commit"},
+                        {"ejemplo":"git commit -m # Escribe tu mensaje de confirmación desde la propia línea de comandos"},
+                        {"ejemplo":"git commit -v # muestra el diff en el editor"},
+                        {"ejemplo":"git commit -a -m 'mensaje' # No hace falta git add"}
+                    ],
+                    "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Guardando-cambios-en-el-repositorio"  
                 },
                 {
                     "comando": "describe",
@@ -122,9 +130,14 @@
                 {
                     "comando": "diff",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "Este comando se usa para hacer una lista de conflictos. Para poder ver conflictos con el archivo base usa:",
                     "show":true,
-                    "ejemplos":[],
+                    "ejemplos":[
+                        {"ejemplo":"git diff --base <file-name>"},
+                        {"ejemplo":"git diff <source-branch> <target-branch> #El siguiente comando se usa para ver los conflictos que hay entre ramas que están por ser fusionadas para poder fusionarlas sin problemas"},
+                        {"ejemplo":"git diff #Para solo ver una lista de todos los conflictos presentes"}
+                    
+                    ],
                     "url":""
                 },
                 {
@@ -194,6 +207,7 @@
                     "show":true,
                     "ejemplos":[
                         {"ejemplo":"git log"},
+                        {"ejemplo":"git log | cat # Mantiene los commit en pantalla "},
                         {"ejemplo":"git log --stat #ver algunas estadísticas de cada confirmación"},
                         {"ejemplo":"git log --pretty=oneline # modifica el formato de la salida  (short, full y fuller)"}
                     ],
@@ -202,9 +216,11 @@
                 {
                     "comando": "merge",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "Unir una rama a la rama actual",
                     "show":true,
-                    "ejemplos":[],
+                    "ejemplos":[
+                        {"ejemplo": "git merge <rama> # Mezcla la rama actual con <rama>"}
+                    ],
                     "url":""
                 },
                 {
@@ -226,10 +242,10 @@
                 {
                     "comando": "pull",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "Para poder fusionar todos los cambios que se han hecho en el repositorio local trabajando",
                     "show":true,
-                    "ejemplos":[],
-                    "url":""
+                    "ejemplos":[{"ejemplo":" git pull"}],
+                    "url":"https://www.hostinger.es/tutoriales/comandos-de-git"
                 },
                 {
                     "comando": "push",
@@ -252,17 +268,21 @@
                 {
                     "comando": "reset",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "Borrar el último commit que hemos hecho",
                     "show":true,
-                    "ejemplos":[],
+                    "ejemplos":[
+                        {"ejemplo":"git reset HEAD"}
+                    ],
                     "url":""
                 },
                 {
                     "comando": "revert",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "Deshacer el contenido de un commit (revertir un commit)",
                     "show":true,
-                    "ejemplos":[],
+                    "ejemplos":[
+                        {"ejemplo":"git revert HEAD"}
+                    ],
                     "url":""
                 },
 
@@ -317,9 +337,13 @@
                 {
                     "comando": "tag",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "Listar las etiquetas disponibles en Git es sencillo, Simplemente escribe git tag",
                     "show":true,
-                    "ejemplos":[],
+                    "ejemplos":[
+                        {"ejemplo":"git tag"},
+                        {"ejemplo":"git tag -a v1.4 -m 'my version 1.4'  # Crear una etiqueta anotada en Git "},
+                        {"ejemplo":"$ git tag -l 'v1.4.2.*'  #buscar etiquetas de acuerdo a un patrón en particular"}
+                    ],
                     "url":""  
                 },
                 {
@@ -390,13 +414,15 @@
                 {
                     "comando": "reflog",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "Revisar donde has estado en cualquier momento pasado",
                     "show":true,
-                    "ejemplos":[],
+                    "ejemplos":[
+                        {"ejemplo":"git reflog"}
+                    ],
                     "url":""
                 },
                 {
-                    "comando": "Para ver qué repositorios remotos tienes configurados, puedes ejecutar el comando git remote. Mostrará una lista con los nombres de los remotos que hayas especificado. Si has clonado tu repositorio, deberías ver por lo menos 'origin' —es el nombre predeterminado que le da Git al servidor del que clonaste—:",
+                    "comando": "Para ver qué repositorios remotos tienes configurados, puedes ejecutar el comando git remote. Mostrará una lista con los nombres de los remotos que hayas especificado. ",
                     "categoria":"",
                     "descripcion": "",
                     "show":true,
@@ -433,10 +459,12 @@
                 {
                     "comando": "blame",
                     "categoria":"Interrogadores",
-                    "descripcion": "",
+                    "descripcion": "Cuando se está rastreando un error dentro del código buscando localizar cuándo se introdujo y por qué, el mejor auxiliar para hacerlo es la anotación de archivos. Esta suele mostrar la confirmación de cambios (commit) que modificó por última vez cada una de las líneas en cualquiera de los archivos.",
                     "show":true,
-                    "ejemplos":[],
-                    "url":""
+                    "ejemplos":[
+                        {"ejemplo":"git blame -L 12,22 <archivo> # muestra cuando y por quién se modificaron de la linea 12 a la 22"}
+                    ],
+                    "url":"https://git-scm.com/book/es/v1/Las-herramientas-de-Git-Depuraci%C3%B3n-con-Git"
                 },
                 {
                     "comando": "cherry",

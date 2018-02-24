@@ -71,15 +71,19 @@
                         <h2> Comando: {{terminoDet.comando}} </h2>
                     </center>
 
+                    <strong>Descripción: </strong>
                     <div layout="row">
-                        <strong>Descripción: </strong> {{terminoDet.descripcion}}
+                        {{terminoDet.descripcion}}
                     </div>
 
-                     
+
+
 
                     <div ng-show="terminoDet.ejemplos.length > 0" class="animated example-animate-container">
                         <md-divider></md-divider>
-                        <center><h2>Ejemplos</h2></center>
+                        <center>
+                            <h2>Ejemplos</h2>
+                        </center>
                         <md-list-item class="md-2-line animate-repeat" ng-repeat="termino_ejemplo in terminoDet.ejemplos " ng-click="null">
 
                             <div class="md-list-item-text" layout="column">

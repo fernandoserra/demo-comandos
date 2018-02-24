@@ -38,7 +38,7 @@ angular
 
     $mdThemingProvider.theme('oscuro')
       .primaryPalette('blue-grey')
-      .accentPalette('blue-grey')
+      .accentPalette('orange')
       .warnPalette('red')
 
     $mdThemingProvider.theme('verde')
@@ -68,6 +68,15 @@ angular
         controller  : 'terminosControllerLinux'
       })
        
+  })
+  .run(function($timeout,$transitions,$state,$http,$rootScope)
+  {     
+    $transitions.onStart({}, function($transitions){
+      $rootScope.stateIsLoading = true; 
+    })
+    $transitions.onSuccess({}, function($transitions){
+      $timeout(function() { $rootScope.stateIsLoading = false; }, 1500);
+    }) 
   })
   
   
