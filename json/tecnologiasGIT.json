@@ -253,7 +253,9 @@
                     "descripcion": "Enviando a tus repositorios remotos. Cuando tu proyecto se encuentra en un estado que quieres compartir, tienes que enviarlo a un repositorio remoto.",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git push origin master"}
+                        {"ejemplo":"git push origin master"},
+                        {"ejemplo":"git push -u origin --all # enviando repositorio con todas las ramas"},
+                        {"ejemplo":"git push -u origin --tags"}
                     ],
                     "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Trabajando-con-repositorios-remotos"
                 },
@@ -422,12 +424,13 @@
                     "url":""
                 },
                 {
-                    "comando": "Para ver qué repositorios remotos tienes configurados, puedes ejecutar el comando git remote. Mostrará una lista con los nombres de los remotos que hayas especificado. ",
+                    "comando": "remote",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "Para ver qué repositorios remotos tienes configurados, puedes ejecutar el comando git remote. Mostrará una lista con los nombres de los remotos que hayas especificado.",
                     "show":true,
                     "ejemplos":[
                         {"ejemplo":"git remote"},
+                        {"ejemplo":"git remote add origin <https://gitlab.com/usuario/repositorio.git>"},
                         {"ejemplo":"git remote -v  (muestra la URL asociada a cada repositorio remoto)"}
                     ],
                     "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Trabajando-con-repositorios-remotos"
