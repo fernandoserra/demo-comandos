@@ -6,11 +6,15 @@
       var terminosServices = {};
       
       terminosServices.getTerminos = function () {
-        return $http.get("https://fernandoserra.github.io/demo-terminos/json/tecnologiasGIT.json");
+        return $http.get("https://fernandoserra.github.io/demo-comandos/json/tecnologiasGIT.json");
+      };
+
+      terminosServices.getTerminosMaven = function () {
+        return $http.get("https://fernandoserra.github.io/demo-comandos/json/tecnologiasMAVEN.json");
       };
 
       terminosServices.getTerminosLinux = function () {
-        return $http.get("https://fernandoserra.github.io/demo-terminos/json/tecnologiasLINUX.json");
+        return $http.get("https://fernandoserra.github.io/demo-comandos/json/tecnologiasLINUX.json");
       };
   
       return terminosServices;

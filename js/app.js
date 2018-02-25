@@ -1,9 +1,7 @@
 angular
   .module('MyApp', ['ui.router','ngMaterial', 'ngMessages','ngAnimate'])
   .config(function($stateProvider, $urlRouterProvider,$mdThemingProvider){
-    //$mdThemingProvider.generateThemesOnDemand(true);
-      
-    /*zzzzzzzzzzzz*/
+
     $mdThemingProvider.definePalette('amazingPaletteName', {
       '50': 'ffebee',
       '100': 'ffcdd2',
@@ -19,15 +17,12 @@ angular
       'A200': 'ff5252',
       'A400': 'ff1744',
       'A700': 'd50000',
-      'contrastDefaultColor': 'light',    // whether, by default, text (contrast)
-                                          // on this palette should be dark or light
-      'contrastDarkColors': ['50', '100', //hues which contrast should be 'dark' by default
+      'contrastDefaultColor': 'light',
+      'contrastDarkColors': ['50', '100', 
        '200', '300', '400', 'A100'],
-      'contrastLightColors': undefined    // could also specify this if default was 'dark'
+      'contrastLightColors': undefined
     });
-    /*zzzzzzzzzzzz*/
-
-
+    
     $mdThemingProvider.theme('ind')
       .primaryPalette('indigo',{'hue-1': '100'})
       .accentPalette('pink')
@@ -60,6 +55,12 @@ angular
         url:'/git', 
         templateUrl : 'templates/git.html',
         controller  : 'terminosController'
+      })
+
+      .state('maven',{ 
+        url:'/maven', 
+        templateUrl : 'templates/maven.html',
+        controller  : 'terminosControllerMaven'
       })
 
       .state('linux',{ 

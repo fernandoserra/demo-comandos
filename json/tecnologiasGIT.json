@@ -148,7 +148,8 @@
                     "descripcion": "Recibiendo de tus repositorios remotos. Para recuperar datos de tus repositorios remotos puedes ejecutar:",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git fetch [remote-name] "}
+                        {"ejemplo":"git fetch [remote-name]"},
+                        {"ejemplo":"git remote set-url origin https://github.com/USERNAME/REPOSITORY.git #Cambie el directorio de trabajo actual"}
                     ],
                     "url":""
                 },
@@ -275,7 +276,8 @@
                     "descripcion": "Borrar el último commit que hemos hecho",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git reset HEAD"}
+                        {"ejemplo":"git reset HEAD"},
+                        {"ejemplo":"git reset --soft HEAD~1  # Te quedas con los cambios en local pero deshaces el commit "}
                     ],
                     "url":""
                 },
