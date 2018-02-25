@@ -86,80 +86,46 @@
 
     <section layout="row" flex>
         <!--style="background-color: #1c1464; color:#fff; font-family:'Seravek Medium';"-->
-        <md-sidenav id="mside"  class="md-sidenav-left"
-            md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" md-whiteframe="4">
-            <md-content ng-controller="LeftCtrl" > <!--style="background-color: #1c1464; color:#fff;"-->
-                
-                    <div layout="column">
-                            <md-toolbar class="md-theme-light" hide-gt-md>
-                                <div layout="row" layout-align="start center">
-                                    <h1 class="md-toolbar-tools">Menu</h1>
-                                    <span flex></span>
-                        
-                                    <md-button ng-click="close()" class="md-icon-button">
-                                        <i class="material-icons">clear</i>
-                                    </md-button>
-                        
-                                </div>
-                            </md-toolbar>
-                        
-                            <md-list-item href="#/dashboard/inicio">
-                                <md-icon>
-                                    <i class="material-icons i_f">&#xE88A;</i>
-                                </md-icon>
-                                <span flex>GIT</span>
-                            </md-list-item>
-                            
-                            <md-list-item href="#/dashboard/inicio">
-                                <md-icon>
-                                    <i class="material-icons i_f">&#xE88A;</i>
-                                </md-icon>
-                                <span flex>LINUX</span>
-                            </md-list-item>
-                        
-                         
-                         
-                         
-                        
-                        
-                        
-                        
+        <md-sidenav id="mside" class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" md-whiteframe="4">
+            <md-content ng-controller="LeftCtrl">
+                <!--style="background-color: #1c1464; color:#fff;"-->
+
+                <div layout="column">
+                    <md-toolbar class="md-theme-light" hide-gt-md>
+                        <div layout="row" layout-align="start center">
+                            <h1 class="md-toolbar-tools">Menu</h1>
+                            <span flex></span>
+
+                            <md-button ng-click="close()" class="md-icon-button">
+                                <i class="material-icons">clear</i>
+                            </md-button>
+
                         </div>
-                <!--layout-padding-->
-                <!--     
-                    <div ng-switch="{{rol}}">
-                        <div ng-switch-when="1">
-                            <div ng-include src="'templates/menuAdmin.html'"></div>	
-                        </div>
-                        <div ng-switch-when="3">
-                            <div ng-include src="'templates/menuEjecutivoVentas.html'"></div>	
-                        </div>
-                        <div ng-switch-when="4">
-                            <div ng-include src="'templates/menuAdminCondominio.html'"></div>	
-                        </div>
-                        <div ng-switch-when="5">
-                            <div ng-include src="'templates/menuPropietario.html'"></div>	
-                        </div>
-                        <div ng-switch-when="6">
-                            <div ng-include src="'templates/menuConstructora.html'"></div>	
-                        </div>
-                        <div ng-switch-when="9">
-                            <div ng-include src="'templates/menuEjecutivoNegocios.html'"></div>	
-                        </div>
-                        <div ng-switch-when="10">
-                            <div ng-include src="'templates/menuLicitaciones.html'"></div>	
-                        </div>
-                    </div>
-                -->
+                    </md-toolbar>
+
+                    <md-list-item href="#/dashboard/inicio">
+                        <md-icon>
+                            <i class="material-icons i_f">&#xE88A;</i>
+                        </md-icon>
+                        <span flex>GIT</span>
+                    </md-list-item>
+
+                    <md-list-item href="#/dashboard/inicio">
+                        <md-icon>
+                            <i class="material-icons i_f">&#xE88A;</i>
+                        </md-icon>
+                        <span flex>LINUX</span>
+                    </md-list-item>
+
+                </div>
+
 
             </md-content>
         </md-sidenav>
 
         <md-content flex>
-          contenidooooo
             <div ui-view></div>
         </md-content>
-        
 
 
         <!-- menu derecho-->
@@ -180,23 +146,6 @@
                     </div>
                 </md-toolbar>
 
-
-                <!-- aqui colocar tabs -->
-                <!--<div ng-switch="{{rol}}">
-                            <div ng-switch-when="1">
-                                <div ng-include src="'templates/menu2.html'"></div>	
-                            </div>
-                            <div ng-switch-when="4">
-                                <div ng-include src="'templates/menu2AdminCondominio.html'"></div>	
-                            </div>
-                            <div ng-switch-when="5">
-                                <div ng-include src="'templates/menu2Condominio.html'"></div>	
-                            </div>
-                            <div ng-switch-when="6">
-                                <div ng-include src="'templates/menu2.html'"></div>	
-                            </div>
-                        </div>-->
-                <!-- aqui colocar tabs -->
 
             </md-content>
 
@@ -234,8 +183,5 @@
         <!-- f menu derecho-->
 
     </section>
-
-
-
 
 </div>

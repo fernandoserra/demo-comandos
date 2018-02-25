@@ -1,16 +1,16 @@
 var app = angular
     .module('MyApp')
-    .controller('terminosControllerLinux', function ($scope, $mdDialog, terminosServices) {
+    .controller('terminosControllerMaven', function ($scope, $mdDialog, terminosServices) {
 
-        $scope.terminos_linux = [];
-        $scope.loading_terminos_linux = true;
-        terminosServices.getTerminosLinux()
+        $scope.terminos_maven = [];
+        $scope.loading_terminos_maven = true;
+        terminosServices.getTerminosMaven()
             .then(function successCallback(response) {
-                $scope.terminos_linux = response.data.tecnologia["0"].lista;
+                $scope.terminos_maven = response.data.tecnologia["0"].lista;
                 console.log(response.data.tecnologia["0"].lista)
-                $scope.loading_terminos_linux = false;
+                $scope.loading_terminos_maven = false;
             }, function errorCallback(response) {
-                $scope.loading_terminos_linux = false;
+                $scope.loading_terminos_maven = false;
             });
 
         $scope.showPrerenderedDialog = function (termino) {
@@ -23,6 +23,5 @@ var app = angular
         };
 
         $scope.closeDialog=function(){ $mdDialog.hide(); }
-
 
     })
