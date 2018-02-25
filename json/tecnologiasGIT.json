@@ -75,9 +75,11 @@
                 {
                     "comando": "cherry-pick",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "Este comando permite coger uno o varios commits de otra rama sin tener que hacer un merge completo",
                     "show":true,
-                    "ejemplos":[],
+                    "ejemplos":[
+                        {"ejemplo":"git cherry-pick e43a6fd3e94888d76779ad79fb568ed180e5fcdf"}
+                    ],
                     "url":""
                 },
                 {
