@@ -23,5 +23,5 @@ var app = angular
         };
 
         $scope.closeDialog=function(){ $mdDialog.hide(); }
-
+    
     })
