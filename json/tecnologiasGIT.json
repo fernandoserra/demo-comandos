@@ -43,6 +43,8 @@
                     "ejemplos":[
                         { "ejemplo":"git branch <nombre-rama> # crea rama." },
                         { "ejemplo":"git branch # lista ramas"},
+                        { "ejemplo":"git branch -a # lista ramas remotas y locales"},
+                        { "ejemplo":"git branch -r # lista ramas remotas"},
                         { "ejemplo":"git branch -d <rama> # elimina la rama"},
                         { "ejemplo":"git branch -v # lista ramas mostrando último commit"},
                         { "ejemplo":"git push origin --delete <branchName> # Elimina una rama del servidor "},
@@ -148,8 +150,7 @@
                     "descripcion": "Recibiendo de tus repositorios remotos. Para recuperar datos de tus repositorios remotos puedes ejecutar:",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git fetch [remote-name]"},
-                        {"ejemplo":"git remote set-url origin https://github.com/USERNAME/REPOSITORY.git #Cambie el directorio de trabajo actual"}
+                        {"ejemplo":"git fetch [remote-name]"}
                     ],
                     "url":""
                 },
@@ -163,11 +164,14 @@
                 },
                 {
                     "comando": "gc",
-                    "categoria":"",
-                    "descripcion": "",
+                    "categoria":"Mantenimiento y recuperación de datos",
+                    "descripcion": "De cuando en cuando, Git lanza automáticamente un comando llamado 'auto gc'. La mayor parte de las veces, este comando no hace nada. Pero, cuando hay demasiados objetos sueltos, (objetos fuera de un archivo empaquetador), o demasiados archivos empaquetadores, Git lanza un comando git gc completo. gc corresponde a 'recogida de basura' (garbage collect)",
                     "show":true,
-                    "ejemplos":[],
-                    "url":""
+                    "ejemplos":[
+                        {"ejemplo":"git gc"},
+                        {"ejemplo":"git gc --auto"}
+                    ],
+                    "url":"https://git-scm.com/book/es/v1/Los-entresijos-internos-de-Git-Mantenimiento-y-recuperaci%C3%B3n-de-datos"
                 },
                 {
                     "comando": "grep",
@@ -210,6 +214,7 @@
                     "show":true,
                     "ejemplos":[
                         {"ejemplo":"git log"},
+                        {"ejemplo":"git log --follow -p <archivo> #Examinar el historial de cambios de un archivo"},
                         {"ejemplo":"git log | cat # Mantiene los commit en pantalla "},
                         {"ejemplo":"git log --stat #ver algunas estadísticas de cada confirmación"},
                         {"ejemplo":"git log --pretty=oneline # modifica el formato de la salida  (short, full y fuller)"}
@@ -435,7 +440,8 @@
                     "ejemplos":[
                         {"ejemplo":"git remote"},
                         {"ejemplo":"git remote add origin <https://gitlab.com/usuario/repositorio.git>"},
-                        {"ejemplo":"git remote -v  (muestra la URL asociada a cada repositorio remoto)"}
+                        {"ejemplo":"git remote -v  (muestra la URL asociada a cada repositorio remoto)"},
+                        {"ejemplo":"git remote set-url origin https://github.com/USERNAME/REPOSITORY.git #Cambie el directorio de trabajo actual"}
                     ],
                     "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Trabajando-con-repositorios-remotos"
                 },
@@ -469,6 +475,7 @@
                     "descripcion": "Cuando se está rastreando un error dentro del código buscando localizar cuándo se introdujo y por qué, el mejor auxiliar para hacerlo es la anotación de archivos. Esta suele mostrar la confirmación de cambios (commit) que modificó por última vez cada una de las líneas en cualquiera de los archivos.",
                     "show":true,
                     "ejemplos":[
+                        {"ejemplo":"git blame <archivo> #Averiguar quién hizo qué cosa en un archivo "},
                         {"ejemplo":"git blame -L 12,22 <archivo> # muestra cuando y por quién se modificaron de la linea 12 a la 22"}
                     ],
                     "url":"https://git-scm.com/book/es/v1/Las-herramientas-de-Git-Depuraci%C3%B3n-con-Git"
