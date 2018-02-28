@@ -441,7 +441,7 @@
                     "show":true,
                     "ejemplos":[
                         {"ejemplo":"git remote"},
-                        {"ejemplo":"git remote show origin #Muestras todas las ramas remotas (asi no esten el repositorio) "},
+                        {"ejemplo":"git remote show origin #Muestras todas las ramas remotas (asi no esten el repositorio local) "},
                         {"ejemplo":"git remote add origin <https://gitlab.com/usuario/repositorio.git>"},
                         {"ejemplo":"git remote -v  (muestra la URL asociada a cada repositorio remoto)"},
                         {"ejemplo":"git remote set-url origin https://github.com/USERNAME/REPOSITORY.git #Cambie el directorio de trabajo actual"}
