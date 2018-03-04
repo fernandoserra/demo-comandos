@@ -23,6 +23,17 @@
                     "descripcion": "mostrar los componentes (hardware) del sistema",
                     "show":true
                 },
+                {
+                    "comando": "rm",
+                    "descripcion": "Remueve el archivo",
+                    "ejemplos":[
+                        {"ejemplo":"rm <nombre del archivo>"},
+                        {"ejemplo":"rmdir <nombre carpeta> #elimina carpeta vacia "},
+                        {"ejemplo":"rm -R <nombre carpeta> #elimina carpeta y archivos que esten dentro de la carpeta"}
+                    ],
+                    "show":true
+                },
+                
 
 
 

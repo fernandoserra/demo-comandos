@@ -219,7 +219,8 @@
                         {"ejemplo":"git log --follow -p <archivo> #Examinar el historial de cambios de un archivo"},
                         {"ejemplo":"git log | cat # Mantiene los commit en pantalla "},
                         {"ejemplo":"git log --stat #ver algunas estadísticas de cada confirmación"},
-                        {"ejemplo":"git log --pretty=oneline # modifica el formato de la salida  (short, full y fuller)"}
+                        {"ejemplo":"git log --pretty=oneline # modifica el formato de la salida  (short, full y fuller)"},
+                        {"ejemplo":"git log --oneline --decorate --graph --all "}
                     ],
                     "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Viendo-el-hist%C3%B3rico-de-confirmaciones"
                 },
@@ -272,9 +273,11 @@
                 {
                     "comando": "rebase",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "Que hace: Integra y reescribes las ramas. Que destaca: historial lineal.  Cuando usar?: Para integrar los cambios del repositorio remote a su ambiente local.  Peligro:Modifica el contenido de una rama compartida. ",
                     "show":true,
-                    "ejemplos":[],
+                    "ejemplos":[
+                        {"ejemplo":"git rebase <branch> "}
+                    ],
                     "url":""
                 },
                 {
