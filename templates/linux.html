@@ -77,6 +77,28 @@
                         {{terminoDet.descripcion}}                        
                     </div>
 
+
+
+                    <div ng-show="terminoDet.ejemplos.length > 0" class="animated example-animate-container">
+                        <md-divider></md-divider>
+                        <center>
+                            <h2>Ejemplos</h2>
+                        </center>
+                        <md-list-item class="md-2-line animate-repeat" ng-repeat="termino_ejemplo in terminoDet.ejemplos " ng-click="null">
+
+                            <div class="md-list-item-text" layout="column">
+                                <h3>
+                                    <md-icon>
+                                        <i class="material-icons">&#xE5CC;</i>
+                                    </md-icon> {{termino_ejemplo.ejemplo}}
+                                </h3>
+                            </div>
+
+                            <md-divider></md-divider>
+
+                        </md-list-item>
+                    </div>
+
                 </md-dialog-content>
                 <md-dialog-actions></md-dialog-actions>
             </md-dialog>
