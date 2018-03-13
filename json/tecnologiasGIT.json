@@ -321,10 +321,14 @@
                 {
                     "comando": "show",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "Mostrar un fichero de una rama (o commit) dado:",
                     "show":true,
-                    "ejemplos":[],
-                    "url":""
+                    "ejemplos":[
+                        {"ejemplo":"git show <commit o rama>:<nombre-fichero>"},
+                        {"ejemplo":"git show --stat <commit> #Listado de todos los archivos de la confirmacion"},
+                        {"ejemplo":"git show --stat --name-only <commit> #Listado de todos los archivos de la confirmacion"}
+                    ],
+                    "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Viendo-el-hist%C3%B3rico-de-confirmaciones"
                 },
                 {
                     "comando": "stash",
