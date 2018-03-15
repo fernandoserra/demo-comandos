@@ -220,7 +220,11 @@
                         {"ejemplo":"git log | cat # Mantiene los commit en pantalla "},
                         {"ejemplo":"git log --stat #ver algunas estadísticas de cada confirmación"},
                         {"ejemplo":"git log --pretty=oneline # modifica el formato de la salida  (short, full y fuller)"},
-                        {"ejemplo":"git log --oneline --decorate --graph --all "}
+                        {"ejemplo":"git log --oneline --decorate --graph --all "},
+                        {"ejemplo":"git log -p #Muestra el diff introducido en cada commit "},
+                        {"ejemplo":"git log -n #Siendo n un número, muestra los últimos n commits "},
+                        {"ejemplo":"git log <Archivo> #Permite especificar un nombre de archivo o directorio, para ver commits que introdujeron cambios en ese archivo. "}
+
                     ],
                     "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Viendo-el-hist%C3%B3rico-de-confirmaciones"
                 },
