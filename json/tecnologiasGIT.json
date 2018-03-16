@@ -28,6 +28,16 @@
                     "url":""
                 },
                 {
+                    "comando": "amend",
+                    "categoria":"",
+                    "descripcion": "Reeditar un mensaje de commit en Git.",
+                    "show":true,
+                    "ejemplos":[
+                        {"ejemplo":"git commit – amend –m “Este es el nuevo mensaje”"}
+                    ],
+                    "url":""
+                },
+                {
                     "comando": "bisect",
                     "categoria":"",
                     "descripcion": " Búsqueda binaria. El comando bisect hace una búsqueda binaria a través de su historial de commits para ayudarle a identificar lo más rápidamente posible qué commit introdujo un problema ",
@@ -47,6 +57,7 @@
                         { "ejemplo":"git branch -r # lista ramas remotas"},
                         { "ejemplo":"git branch -d <rama> # elimina la rama"},
                         { "ejemplo":"git branch -v # lista ramas mostrando último commit"},
+                        { "ejemplo":"git branch -m nombre-rama nombre-rama-nueva #Renombrando rama"},
                         { "ejemplo":"git push origin --delete <branchName> # Elimina una rama del servidor "},
                         { "ejemplo":"git checkout <nombre-rama> # cambiar a la rama especificada. "},
                         { "ejemplo":"git checkout -b <nombre-rama> # crea y cambia de rama "},
@@ -221,9 +232,15 @@
                         {"ejemplo":"git log --stat #ver algunas estadísticas de cada confirmación"},
                         {"ejemplo":"git log --pretty=oneline # modifica el formato de la salida  (short, full y fuller)"},
                         {"ejemplo":"git log --oneline --decorate --graph --all "},
+                        {"ejemplo":"git log --oneline #Para ver una versión más compacta del historial de commits "},
                         {"ejemplo":"git log -p #Muestra el diff introducido en cada commit "},
                         {"ejemplo":"git log -n #Siendo n un número, muestra los últimos n commits "},
-                        {"ejemplo":"git log <Archivo> #Permite especificar un nombre de archivo o directorio, para ver commits que introdujeron cambios en ese archivo. "}
+                        {"ejemplo":"git log <Archivo> #Permite especificar un nombre de archivo o directorio, para ver commits que introdujeron cambios en ese archivo. "},
+                        {"ejemplo":"git log <branchA> ^ <branchB>   #Compara ramas mirando los commits de una rama que no son alcanzables desde la otra."},
+                        {"ejemplo":"git log --author=Linus [-<N>]   #Busca los commits de un autor específico, incluso buscar los N últimos."},
+                        {"ejemplo":"git log --grep=<word>   #Filtra commits por mensaje dándole una cadena clave"},
+                        {"ejemplo":"git log --stat   #Muestra diffstat de los cambios introducidos en cada commit"}
+
 
                     ],
                     "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Viendo-el-hist%C3%B3rico-de-confirmaciones"
@@ -381,10 +398,13 @@
                 {
                     "comando": "config",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "Configurar git para tenerlo listo para trabajar.",
                     "show":true,
-                    "ejemplos":[],
-                    "url":""
+                    "ejemplos":[
+                        {"ejemplo":"git config --global user.name 'Su Nombre' "},
+                        {"ejemplo":"git config --global user.email 'su_email@cualsea.com'"}
+                    ],
+                    "url":"https://esparta.github.io/gitimmersion-spanish/lab_01.html"
                     
                 },
                 {

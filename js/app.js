@@ -50,25 +50,21 @@ angular
 
     $urlRouterProvider.otherwise('/git')
     $stateProvider
-
       .state('git',{ 
         url:'/git', 
         templateUrl : 'templates/git.html',
         controller  : 'terminosController'
       })
-
       .state('maven',{ 
         url:'/maven', 
         templateUrl : 'templates/maven.html',
         controller  : 'terminosControllerMaven'
       })
-
       .state('linux',{ 
         url:'/linux', 
         templateUrl : 'templates/linux.html',
         controller  : 'terminosControllerLinux'
       })
-       
   })
   .run(function($timeout,$transitions,$state,$http,$rootScope)
   {     
@@ -79,8 +75,6 @@ angular
       $timeout(function() { $rootScope.stateIsLoading = false; }, 1500);
     }) 
   })
-  
-  
   .controller('AppCtrl', function ($scope, $timeout, $mdSidenav) {
     $scope.toggleLeft = buildToggler('left');
     $scope.toggleRight = buildToggler('right');
@@ -91,7 +85,6 @@ angular
       };
     }
   })
-
   .controller('LeftCtrl', function ($scope, $timeout, $mdSidenav, $log) {
     $scope.close = function () {
       $mdSidenav('left').close()
