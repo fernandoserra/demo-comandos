@@ -58,6 +58,8 @@
                         { "ejemplo":"git branch -d <rama> # elimina la rama"},
                         { "ejemplo":"git branch -v # lista ramas mostrando último commit"},
                         { "ejemplo":"git branch -m nombre-rama nombre-rama-nueva #Renombrando rama"},
+                        { "ejemplo":"git branch --merged #Muestra las ramas mescladas"},
+                        { "ejemplo":"git branch --no-merged #Muestas las ramas no mescladas aun"},
                         { "ejemplo":"git push origin --delete <branchName> # Elimina una rama del servidor "},
                         { "ejemplo":"git checkout <nombre-rama> # cambiar a la rama especificada. "},
                         { "ejemplo":"git checkout -b <nombre-rama> # crea y cambia de rama "},

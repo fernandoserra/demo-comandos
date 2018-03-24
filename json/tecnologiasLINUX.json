@@ -9,6 +9,21 @@
                     "show":true
                 },
                 {
+                    "comando": "free",
+                    "descripcion": "Sirve para comprobar la RAM libre, usada y total del sistema",
+                    "show":true
+                },
+                {
+                    "comando": "hdparm",
+                    "descripcion": "El comando hdparm proporciona información sobre los dispositivos SATA conectados.",
+                    "show":true
+                },
+                {   
+                    "comando": "lsusb",
+                    "descripcion": "Este comando muestra los controladores USB y detalles sobre los dispositos conectados.",
+                    "show":true
+                },
+                {
                     "comando": "uname -m",
                     "descripcion": "mostrar la arquitectura de la máquina (2)",
                     "show":true
@@ -33,15 +48,30 @@
                     ],
                     "show":true
                 },
-                
-
-
-
-
                 {
                     "comando": "date",
                     "descripcion": "Mostrar la fecha del sistema",
                     "show":true
+                },
+                {
+                    "comando": "lscpu",
+                    "descripcion": "Obtener información de la CPU",
+                    "show": true
+                },
+                {
+                    "comando": "lspci",
+                    "descripcion": "l comando lspci realiza un listado de los buses PCI y proporciona detalles sobre los dispositivos conectados a ellos, como adaptadores VGA, adaptadores de red, puertos USB, etc.",
+                    "show": true
+                },
+                {
+                    "comando": "top",
+                    "descripcion": "El comando top  nos ayuda a conocer los procesos de ejecución del sistema (y más cosas) en tiempo real y es una de las herramientas más importantes para un administrador.",
+                    "show": true
+                },
+                {
+                    "comando": "man",
+                    "descripcion": "Muestra las páginas de ayuda (manuales) de los distintos comandos.",
+                    "show": true
                 }
 
             ]
