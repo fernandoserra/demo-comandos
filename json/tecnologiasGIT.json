@@ -310,6 +310,7 @@
                     "show":true,
                     "ejemplos":[
                         {"ejemplo":"git reset HEAD"},
+                        {"ejemplo":"git reset --merge #Deshacer una fusión"},
                         {"ejemplo":"git reset --soft HEAD~1  # Te quedas con los cambios en local pero deshaces el commit "}
                     ],
                     "url":""

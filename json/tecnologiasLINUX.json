@@ -72,6 +72,11 @@
                     "comando": "man",
                     "descripcion": "Muestra las páginas de ayuda (manuales) de los distintos comandos.",
                     "show": true
+                },
+                {
+                    "comando": "sudo su -",
+                    "descripcion": "El comando su es utilizando para cambiar el usuario actual a otro usuario.",
+                    "show": true
                 }
 
             ]
