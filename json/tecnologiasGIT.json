@@ -30,9 +30,10 @@
                 {
                     "comando": "amend",
                     "categoria":"",
-                    "descripcion": "Reeditar un mensaje de commit en Git.",
+                    "descripcion": "Concatena nuevos cambios con cambios previos (reemplaza el ultimo commit)",
                     "show":true,
                     "ejemplos":[
+                        {"ejemplo":"git commit – amend “Permite agregar y reemplaza el ultimo commit” "},
                         {"ejemplo":"git commit – amend –m “Este es el nuevo mensaje”"}
                     ],
                     "url":""
@@ -357,9 +358,13 @@
                 {
                     "comando": "stash",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "Guardando cambios temporalmente",
                     "show":true,
-                    "ejemplos":[],
+                    "ejemplos":[
+                        {"ejemplo":"git stash list #Nos muestra la lista de stash que tengamos"},
+                        {"ejemplo":"git stash drop stash@{numero} #Nos permite borrar un stash. "},
+                        {"ejemplo":"git stash apply #Aplicamos el último cambio"}
+                    ],
                     "url":""
                 },
                 {
@@ -404,8 +409,11 @@
                     "descripcion": "Configurar git para tenerlo listo para trabajar.",
                     "show":true,
                     "ejemplos":[
+                        {"ejemplo":"git config --global --list #obtiene la lista de configuracion global"},
                         {"ejemplo":"git config --global user.name 'Su Nombre' "},
                         {"ejemplo":"git config --global user.email 'su_email@cualsea.com'"}
+                        
+
                     ],
                     "url":"https://esparta.github.io/gitimmersion-spanish/lab_01.html"
                     
