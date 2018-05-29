@@ -391,6 +391,10 @@
                     "ejemplos":[
                         {"ejemplo":"git tag"},
                         {"ejemplo":"git tag -a v1.4 -m 'my version 1.4'  # Crear una etiqueta anotada en Git "},
+                        {"ejemplo":"$ git -l #Listando etiquetas"},
+                        {"ejemplo":"$ git tag 0.3 159397ecc31356e782c49db478de964129a232ed #Creando etiqueta de un commit en especifico"},
+                        {"ejemplo":"$ git tag -d 1.0 #Borrando un Tag"},
+                        {"ejemplo":"$ git tag -f-a  0.1 'iniciando el proyecto' + sha #Renombrado Tag"},
                         {"ejemplo":"$ git tag -l 'v1.4.2.*'  #buscar etiquetas de acuerdo a un patrón en particular"}
                     ],
                     "url":""  
