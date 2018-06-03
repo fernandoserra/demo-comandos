@@ -4,6 +4,15 @@
             "nombre": "LINUX",
             "lista": [
                 {
+                    "comando": "alias",
+                    "descripcion": "Nos sirve para crear alias al sistema",
+                    "show":true,
+                    "ejemplos":[
+                        {"ejemplo":"alias #listando los alias en el sistema"},
+                        {"ejemplo":"alias nombreAlias='aqui colocamos las instruciones del alias'"}
+                    ]
+                },
+                {
                     "comando": "arch",
                     "descripcion": "mostrar la arquitectura de la máquina (1)",
                     "show":true
@@ -71,13 +80,112 @@
                 {
                     "comando": "man",
                     "descripcion": "Muestra las páginas de ayuda (manuales) de los distintos comandos.",
-                    "show": true
+                    "show": true,
+                    "ejemplos":[
+                        {"ejemplo":"man ls #Me muestra la informacion del ls"}
+                    ]
                 },
                 {
                     "comando": "sudo su -",
                     "descripcion": "El comando su es utilizando para cambiar el usuario actual a otro usuario.",
                     "show": true
+                },
+                {
+                    "comando": "mv",
+                    "descripcion": "Moviendo archivo.",
+                    "show": true,
+                    "ejemplos":[
+                        {"ejemplo":"mv p1.txt directorio #aqui estamos moviendo el archivo p1. tt al directorio (si lo queremos mover a un directorio del home podemos utilizar ~)"}
+                    ]
+                },
+                {
+                    "comando": "cp",
+                    "descripcion": "Copiando archivo.",
+                    "show": true,
+                    "ejemplos":[
+                        {"ejemplo":"mv p1.txt directorio #aqui estamos moviendo el archivo p1. tt al directorio (si lo queremos mover a un directorio del home podemos utilizar ~)"}
+                    ]
+                },
+                {
+                    "comando": "pushd",
+                    "descripcion": "Comando al cual podemos decirle a nuestro shell que guarde temporalmente la ubicación actual de mi directorio y acto seguido posicionarnos en una nueva carpeta.",
+                    "show": true,
+                    "ejemplos":[
+                        {"ejemplo":"pushd #Voy al directorio"}
+                    ]
+                },
+                {
+                    "comando": "popd",
+                    "descripcion": "Con este comando volveremos a la carpeta original sin necesidad de andar escribiendo toda la ruta original.",
+                    "show": true,
+                    "ejemplos":[
+                        {"ejemplo":"popd #Me regreso al directorio donde estaba anteriormente (esto me sirve cuando estoy cambiando en direferentes proyecto)"}
+                    ]
+                },
+                {
+                    "comando": "kill",
+                    "descripcion": "Con este comando matamos procesos.",
+                    "show": true,
+                    "ejemplos":[
+                        {"ejemplo":"kill -9 12345 #Matar el proceso (PID)"}
+                    ]
+                },
+                {
+                    "comando": "greep",
+                    "descripcion": "El comando grep nos permite buscar, dentro de los archivos, las líneas que concuerdan con un patrón.",
+                    "show": true,
+                    "ejemplos":[
+                        {"ejemplo":"grep-r . -e fernando  #Va a buscar en el directorio de de forma recursiva la expresion(-e) fernando"},
+                        {"ejemplo":"grep -r file -e while #traeme todos los texto que diga while (trae el archivo donde se encontro la palabra while)"},
+                        {"ejemplo":"grep -n -r file -e while #es igual al anterior con diferencia a la bandera -n que me va a indicar el numero de linea donde esta esa palabra"},
+                        {"ejemplo": "grep -n  streams.php -e while | wc -l  # aqui busca la palabra while en el archivo indicado y luego te dice cuantas palabras son    wc(cuantas son)"},
+                        {"ejemplo":"grep -V while  #Excluyas y no lo muestres"},
+                        {"ejemplo":"grep -i while  #cuando ytilizamos la opcion de -i no importa si la palabra en minuscula o mayuscula"}                        
+                    ]
+                },
+                {
+                    "comando":"find",
+                    "descripcion": "el comando find el cual nos permite buscar archivos/directorios bajo una serie de criterios que nosotros le argumentemos.",
+                    "show":true,
+                    "ejemplos":[
+                        {"ejemplo": "find . -name *.php -type -f | wc -l #busca el archivo con la extencion .php y te dice cuantos archivos encontro"},
+                        {"ejemplo": "find . -name *.php  | wc -l # Es lo mismo que el comando de arriba"},
+                        {"ejemplo": "find . -type d  #Busca cuantos directorios hay dentro de ese directorio"},
+                        {"ejemplo": "find . -type d | wc -l  #muestra como resultado el numero de directorios encontrados"}
+                    ]    
+                },
+                {
+                    "comando":"curl",
+                    "descripcion": "Curl se usa para transferir archivos desde un servidor, es compatible con varios protocolos como HTTP, HTTPS, FTP, FTPS, IMAP, IMAPS, DICT, ARCHIVO, GOPHER, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET y TFTP, etc.",
+                    "show":true,
+                    "ejemplos":[
+                        {"ejemplo": "culr https://raw.githubusercontent.com/datasets/airport-codes/master/data/airport-codes.csv  #Muestra el archivo en pantalla"},
+                        {"ejemplo": "culr https://raw.githubusercontent.com/datasets/airport-codes/master/data/airport-codes.csv >aeropuertor.csv #Descarga el archivo"},
+                        {"ejemplo": "culr https://raw.githubusercontent.com/datasets/airport-codes/master/data/airport-codes.csv -o aeropuertor.csv #Otra manera de darcagar el archivo"},
+                        {"ejemplo": "curl https://fernandoserra.github.io/ "}
+                    ]    
+                },
+                {
+                    "comando":"zip",
+                    "descripcion": "Comprimiendo.",
+                    "show":true,
+                    "ejemplos":[
+                        {"ejemplo": "zip varioscsv.zip *csv #comprimiendo todos los archivos zip que tenemos en el directorio y lo comprimimos en un archivo llamado varioscsv.zip"}                        
+                    ]    
+                },
+                {
+                    "comando":"unzip",
+                    "descripcion": "Descomprimir.",
+                    "show":true,
+                    "ejemplos":[                        
+                        {"ejemplo": "unzip -vl varioscsv.zip  #me muestra el listado de los archivos que estan comprimido n varioscsv.zip"},
+                        {"ejemplo": "unzip varioscsv.zip #descomprime el archivo varioscsv.zip"}
+                        
+                    ]    
                 }
+
+
+
 
             ]
         }

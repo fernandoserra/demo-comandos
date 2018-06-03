@@ -57,14 +57,17 @@
                         { "ejemplo":"git branch -a # lista ramas remotas y locales"},
                         { "ejemplo":"git branch -r # lista ramas remotas"},
                         { "ejemplo":"git branch -d <rama> # elimina la rama"},
+                        { "ejemplo":"git branch -D #La 'D' mayuscula hace un borrado forzado asi la rama tenga cambio lo borra"},
                         { "ejemplo":"git branch -v # lista ramas mostrando último commit"},
-                        { "ejemplo":"git branch -m nombre-rama nombre-rama-nueva #Renombrando rama"},
+                        { "ejemplo":"git branch -m <nombre-rama> <nombre-rama-nueva> #Renombrando rama"},
                         { "ejemplo":"git branch --merged #Muestra las ramas mescladas"},
                         { "ejemplo":"git branch --no-merged #Muestas las ramas no mescladas aun"},
                         { "ejemplo":"git push origin --delete <branchName> # Elimina una rama del servidor "},
                         { "ejemplo":"git checkout <nombre-rama> # cambiar a la rama especificada. "},
                         { "ejemplo":"git checkout -b <nombre-rama> # crea y cambia de rama "},
-                        { "ejemplo":"git merge <rama> # Mezcla la rama actual con <rama>"}
+                        { "ejemplo":"git merge <rama> # Mezcla la rama actual con <rama>"},
+                        { "ejemplo":">git branch --merged #Lista ramas que han sido mezcladas con la actual. Si no tienen un *, pueden borrarse, ya que significa que se han incorporado los cambios en la rama actual."},
+                        { "ejemplo":">git branch --no-merged #Lista ramas que no han sido incorporadas a la actual."}
                     ],
                     "url":""
                 },
@@ -152,6 +155,7 @@
                     "show":true,
                     "ejemplos":[
                         {"ejemplo":"git diff --base <file-name>"},
+                        {"ejemplo":"git diff [version 1] vs [version 2]"},
                         {"ejemplo":"git diff <source-branch> <target-branch> #El siguiente comando se usa para ver los conflictos que hay entre ramas que están por ser fusionadas para poder fusionarlas sin problemas"},
                         {"ejemplo":"git diff #Para solo ver una lista de todos los conflictos presentes"}
                     
@@ -307,7 +311,7 @@
                 {
                     "comando": "reset",
                     "categoria":"",
-                    "descripcion": "Borrar el último commit que hemos hecho",
+                    "descripcion": "Borrar el último commit que hemos hecho (hay tres tipos de reset )",
                     "show":true,
                     "ejemplos":[
                         {"ejemplo":"git reset HEAD"},
@@ -415,7 +419,9 @@
                     "ejemplos":[
                         {"ejemplo":"git config --global --list #obtiene la lista de configuracion global"},
                         {"ejemplo":"git config --global user.name 'Su Nombre' "},
-                        {"ejemplo":"git config --global user.email 'su_email@cualsea.com'"}
+                        {"ejemplo":"git config --global user.email 'su_email@cualsea.com'"},
+                        {"ejemplo":"git config --list #Ver configuracion local "},
+                        {"ejemplo":"git config --global core.editor 'code --wait' #Configurando Editor"}
                         
 
                     ],
@@ -449,7 +455,7 @@
                 {
                     "comando": "mergetool",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "Herramienta gráfica para resolver conflictos",
                     "show":true,
                     "ejemplos":[],
                     "url":""
