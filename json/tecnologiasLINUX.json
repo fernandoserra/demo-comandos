@@ -182,6 +182,24 @@
                         {"ejemplo": "unzip varioscsv.zip #descomprime el archivo varioscsv.zip"}
                         
                     ]    
+                },
+                {
+                    "comando":"nautilus",
+                    "descripcion": "Abrir directorios rápidamente desde nuestra ubicación en la terminal.",
+                    "show":true,
+                    "ejemplos":[                        
+                        {"ejemplo": "nautilus #nombre del directorio"}
+                        
+                    ]    
+                },
+                {
+                    "comando":"xdg-open",
+                    "descripcion": "Abrir directorios rápidamente desde nuestra ubicación en la terminal.",
+                    "show":true,
+                    "ejemplos":[                        
+                        {"ejemplo": "xdg-open #nombre del directorio"}
+                        
+                    ]    
                 }
 
 
