@@ -295,6 +295,7 @@
                         {"ejemplo":"git push origin master"},
                         {"ejemplo":"git push -u origin --all # enviando repositorio con todas las ramas"},
                         {"ejemplo":"git push -u origin --tags"}
+                        {"ejemplo":"git push origin <branch> #Sube rama local a repositorio remoto"}
                     ],
                     "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Trabajando-con-repositorios-remotos"
                 },

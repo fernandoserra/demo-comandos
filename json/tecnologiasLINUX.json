@@ -162,7 +162,8 @@
                         {"ejemplo": "culr https://raw.githubusercontent.com/datasets/airport-codes/master/data/airport-codes.csv  #Muestra el archivo en pantalla"},
                         {"ejemplo": "culr https://raw.githubusercontent.com/datasets/airport-codes/master/data/airport-codes.csv >aeropuertor.csv #Descarga el archivo"},
                         {"ejemplo": "culr https://raw.githubusercontent.com/datasets/airport-codes/master/data/airport-codes.csv -o aeropuertor.csv #Otra manera de darcagar el archivo"},
-                        {"ejemplo": "curl https://fernandoserra.github.io/ "}
+                        {"ejemplo": "curl https://fernandoserra.github.io/ "},
+                        {"ejemplo": "curl ifconfig.me #me muestra la ip publica de la maquina donde estoy trabajando"}
                     ]    
                 },
                 {
