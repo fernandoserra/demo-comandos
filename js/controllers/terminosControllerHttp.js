@@ -6,8 +6,7 @@ var app = angular
         $scope.loading_terminos_http = true;
         terminosServices.getTerminosHttp()
             .then(function successCallback(response) {
-                $scope.terminos_http = response.data.tecnologia["0"].lista;
-                //console.log(response.data.tecnologia["0"].lista)
+                $scope.terminos_http = response.data.tecnologia["0"].lista;                
                 $scope.loading_terminos_http = false;
             }, function errorCallback(response) {
                 $scope.loading_terminos_http = false;
