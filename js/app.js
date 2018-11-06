@@ -65,6 +65,11 @@ angular
         templateUrl : 'templates/linux.html',
         controller  : 'terminosControllerLinux'
       })
+      .state('http',{ 
+        url:'/http', 
+        templateUrl : 'templates/http.html',
+        controller  : 'terminosControllerHttp'
+      })
   })
   .run(function($timeout,$transitions,$state,$http,$rootScope)
   {     

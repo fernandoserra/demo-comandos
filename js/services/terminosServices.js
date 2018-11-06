@@ -16,6 +16,10 @@
       terminosServices.getTerminosLinux = function () {
         return $http.get("https://fernandoserra.github.io/demo-comandos/json/tecnologiasLINUX.json");
       };
+
+      terminosServices.getTerminosHttp = function () {
+        return $http.get("https://fernandoserra.github.io/demo-comandos/json/tecnologiasCODIGOSHTTP.json");
+      };
   
       return terminosServices;
   
