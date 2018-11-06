@@ -7,7 +7,7 @@ var app = angular
         terminosServices.getTerminosMaven()
             .then(function successCallback(response) {
                 $scope.terminos_maven = response.data.tecnologia["0"].lista;
-                console.log(response.data.tecnologia["0"].lista)
+                //console.log(response.data.tecnologia["0"].lista)
                 $scope.loading_terminos_maven = false;
             }, function errorCallback(response) {
                 $scope.loading_terminos_maven = false;

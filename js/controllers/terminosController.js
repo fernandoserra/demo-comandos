@@ -7,7 +7,7 @@ var app = angular
         terminosServices.getTerminos()
             .then(function successCallback(response) {
                 $scope.terminos = response.data.tecnologia["0"].lista;
-                console.log(response.data.tecnologia["0"].lista)
+                //console.log(response.data.tecnologia["0"].lista)
                 $scope.loading_terminos = false;
             }, function errorCallback(response) {
                 $scope.loading_terminos = false;

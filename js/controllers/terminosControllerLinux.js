@@ -7,7 +7,7 @@ var app = angular
         terminosServices.getTerminosLinux()
             .then(function successCallback(response) {
                 $scope.terminos_linux = response.data.tecnologia["0"].lista;
-                console.log(response.data.tecnologia["0"].lista)
+                //console.log(response.data.tecnologia["0"].lista)
                 $scope.loading_terminos_linux = false;
             }, function errorCallback(response) {
                 $scope.loading_terminos_linux = false;

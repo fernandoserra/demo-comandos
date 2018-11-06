@@ -4,96 +4,178 @@
             "nombre": "Códigos de estado HTTP a utilizar en la API RESTful",
             "lista": [
                 {
-                    "comando": "compile",
+                    "comando": "200's",
                     "categoria":"",
-                    "descripcion": "Compilar. La primera vez que se ejecuta un comando Maven descarga todos los plugins y dependencias que necesita, por lo que tardará un poco más de tiempo, el resto de veces, únicamente descargará lo que haya cambiado.",
+                    "descripcion": "usados para respuestas con éxito.",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"mvn compile"}
+                        
                     ],
-                    "url":"http://www.notodocodigo.com/maven/principales-comandos/"
+                    "url":""
                 },
                 {
-                    "comando": "test",
+                    "comando": "300's",
                     "categoria":"",
-                    "descripcion": "Compilar fuentes de prueba y ejecutar pruebas unitarias.",
+                    "descripcion": "usados para redirecciones.",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"mvn test"}
+                       
                     ],
-                    "url":"http://www.notodocodigo.com/maven/principales-comandos/"
+                    "url":""
                 },
                 {
-                    "comando": "package",
+                    "comando": "400's",
                     "categoria":"",
-                    "descripcion": "Para empaquetar nuestro proyecto.",
+                    "descripcion": "usados cuando hay algún problema con la petición.",
                     "show":true,
-                    "ejemplos":[
-                        {"ejemplo":"mvn package"},
-                        {"ejemplo":"mvn –Dmaven.test.skip=true package #Si no se quiere pasar las pruebas unitarias al hacer el paquete"},
-                        {"ejemplo":"mvn -o package # Si quieres construir tus paquetes offline"}
+                    "ejemplos":[                        
                     ],
-                    "url":"http://www.notodocodigo.com/maven/principales-comandos/"
+                    "url":""
                 },
                 {
-                    "comando": "site",
+                    "comando": "500's",
                     "categoria":"",
-                    "descripcion": "Crear un sitio Web con la información de nuestro proyecto.",
+                    "descripcion": "usados cuando hay algún problema con el servidor.",
                     "show":true,
-                    "ejemplos":[
-                        {"ejemplo":"mvn site"}
+                    "ejemplos":[                        
                     ],
-                    "url":"http://www.notodocodigo.com/maven/principales-comandos/"
+                    "url":""
                 },
                 {
-                    "comando": "clean",
+                    "comando": "200",
                     "categoria":"",
-                    "descripcion": "Borrar el directorio target para dejarlo listo para compilar de nuevo.",
+                    "descripcion": "OK - Respuesta a un exitoso GET, PUT, PATCH o DELETE. Puede ser usado también para un POST que no resulta en una creación.",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"mvn clean"}
                     ],
-                    "url":"http://www.notodocodigo.com/maven/principales-comandos/"
+                    "url":""
                 },
                 {
-                    "comando": "deploy",
+                    "comando": "201",
                     "categoria":"",
-                    "descripcion": "Lleva el jar a nuestro servidor de jars. Queda 'visible' para otros proyectos maven en otros ordenadores. Este comando necesita que a maven se le haya indicado dónde está dicho servidor de jars.",
+                    "descripcion": "Created – [Creada] Respuesta a un POST que resulta en una creación. Debería ser combinado con un encabezado Location, apuntando a la ubicación del nuevo recurso.",
                     "show":true,
-                    "ejemplos":[
-                        {"ejemplo":"mvn deploy"}
+                    "ejemplos":[                        
                     ],
-                    "url":"http://chuwiki.chuidiang.org/index.php?title=Tareas_b%C3%A1sicas_de_Maven"
+                    "url":""
                 },
                 {
-                    "comando": "javadoc:javadoc",
+                    "comando": "204",
                     "categoria":"",
-                    "descripcion": "Genera la documentación javadoc de nuestro proyecto.",
+                    "descripcion": "No Content – [Sin Contenido] Respuesta a una petición exitosa que no devuelve un body (por ejemplo en una petición DELETE).",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"mvn javadoc:javadoc"}
+                     
                     ],
-                    "url":"http://chuwiki.chuidiang.org/index.php?title=Tareas_b%C3%A1sicas_de_Maven"
+                    "url":""
                 },
                 {
-                    "comando": "eclipse:eclipse ",
+                    "comando": "304",
                     "categoria":"",
-                    "descripcion": "Nos genera los ficheros típicos de un proyecto eclipse, de forma que podemos importar el proyecto directamente en nuestro entorno de desarrollo eclipse.",
+                    "descripcion": "Not Modified – [No Modificada] Usado cuando el cacheo de encabezados HTTP está activo y el cliente puede usar datos cacheados.",
                     "show":true,
-                    "ejemplos":[
-                        {"ejemplo":"mvn eclipse:eclipse"}
+                    "ejemplos":[                        
                     ],
-                    "url":"http://chuwiki.chuidiang.org/index.php?title=Tareas_b%C3%A1sicas_de_Maven"
+                    "url":""
                 },
                 {
-                    "comando": "idea:idea",
+                    "comando": "400",
                     "categoria":"",
-                    "descripcion": "Nos genera los ficheros típicos de un proyecto IntelliJ IDEA, de forma que podemos importar el proyecto directamente en nuestro entorno de desarrollo IntelliJ IDEA.",
+                    "descripcion": "Bad Request – [Petición Errónea] La petición está malformada, como por ejemplo, si el contenido no fue bien parseado. El error se debe mostrar también en el JSON de respuesta.",
                     "show":true,
-                    "ejemplos":[
-                        {"ejemplo":"mvn idea:idea"}
+                    "ejemplos":[                       
                     ],
-                    "url":"http://chuwiki.chuidiang.org/index.php?title=Tareas_b%C3%A1sicas_de_Maven"
+                    "url":""
+                },
+                {
+                    "comando": "401",
+                    "categoria":"",
+                    "descripcion": "Unauthorized – [Desautorizada] Cuando los detalles de autenticación son inválidos o no son otorgados. También útil para disparar un popup de autorización si la API es usada desde un navegador.",
+                    "show":true,
+                    "ejemplos":[                       
+                    ],
+                    "url":""
+                },
+                {
+                    "comando": "403",
+                    "categoria":"",
+                    "descripcion": " Forbidden – [Prohibida] Cuando la autenticación es exitosa pero el usuario no tiene permiso al recurso en cuestión.",
+                    "show":true,
+                    "ejemplos":[                       
+                    ],
+                    "url":""
+                },
+                {
+                    "comando": "404",
+                    "categoria":"",
+                    "descripcion": "Not Found – [No encontrada] Cuando un recurso se solicita un recurso no existente.",
+                    "show":true,
+                    "ejemplos":[                       
+                    ],
+                    "url":""
+                },
+                {
+                    "comando": "405",
+                    "categoria":"",
+                    "descripcion": "Method Not Allowed – [Método no permitido] Cuando un método HTTP que está siendo pedido no está permitido para el usuario autenticado.",
+                    "show":true,
+                    "ejemplos":[                       
+                    ],
+                    "url":""
+                },
+                {
+                    "comando": "409",
+                    "categoria":"",
+                    "descripcion": "Conflict - [Conflicto] Cuando hay algún conflicto al procesar una petición, por ejemplo en PATCH, POST o DELETE.",
+                    "show":true,
+                    "ejemplos":[                       
+                    ],
+                    "url":""
+                },
+                {
+                    "comando": "410",
+                    "categoria":"",
+                    "descripcion": "Gone – [Retirado] Indica que el recurso en ese endpoint ya no está disponible. Útil como una respuesta en blanco para viejas versiones de la API.",
+                    "show":true,
+                    "ejemplos":[                       
+                    ],
+                    "url":""
+                },
+                {
+                    "comando": "415",
+                    "categoria":"",
+                    "descripcion": "Unsupported Media Type – [Tipo de contenido no soportado] Si el tipo de contenido que solicita la petición es incorrecto.",
+                    "show":true,
+                    "ejemplos":[                       
+                    ],
+                    "url":""
+                },
+                {
+                    "comando": "422",
+                    "categoria":"",
+                    "descripcion": "Unprocessable Entity – [Entidad improcesable] Utilizada para errores de validación, o cuando por ejemplo faltan campos en una petición.",
+                    "show":true,
+                    "ejemplos":[                       
+                    ],
+                    "url":""
+                },
+                {
+                    "comando": "429",
+                    "categoria":"",
+                    "descripcion": "Too Many Requests – [Demasiadas peticiones] Cuando una petición es rechazada debido a la tasa límite.",
+                    "show":true,
+                    "ejemplos":[                       
+                    ],
+                    "url":""
+                },
+                {
+                    "comando": "500",
+                    "categoria":"",
+                    "descripcion": " Internal Server Error – [Error Interno del servidor] Los desarrolladores de API NO deberían usar este código. En su lugar se debería loguear el fallo y no devolver respuesta.",
+                    "show":true,
+                    "ejemplos":[                       
+                    ],
+                    "url":"http://jsonapi.org/format/"
                 }
 
             ]
