@@ -3,208 +3,241 @@
         {
             "nombre": "LINUX",
             "lista": [
+              
                 {
                     "comando": "alias",
                     "descripcion": "Nos sirve para crear alias al sistema",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"alias #listando los alias en el sistema"},
-                        {"ejemplo":"alias nombreAlias='aqui colocamos las instruciones del alias'"}
-                    ]
-                },
-                {
+                      {"ejemplo":"alias #listando los alias en el sistema"},
+                      {"ejemplo":"alias nombreAlias='aqui colocamos las instruciones del alias'"}
+                    ],
+                    "url":""
+                  },
+                  {
                     "comando": "arch",
                     "descripcion": "mostrar la arquitectura de la máquina (1)",
-                    "show":true
-                },
-                {
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
+                  },
+                  {
                     "comando": "free",
                     "descripcion": "Sirve para comprobar la RAM libre, usada y total del sistema",
-                    "show":true
-                },
-                {
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
+                  },
+                  {
                     "comando": "hdparm",
                     "descripcion": "El comando hdparm proporciona información sobre los dispositivos SATA conectados.",
-                    "show":true
-                },
-                {   
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
+                  },
+                  {
                     "comando": "lsusb",
                     "descripcion": "Este comando muestra los controladores USB y detalles sobre los dispositos conectados.",
-                    "show":true
-                },
-                {
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
+                  },
+                  {
                     "comando": "uname -m",
                     "descripcion": "mostrar la arquitectura de la máquina (2)",
-                    "show":true
-                },
-                {
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
+                  },
+                  {
                     "comando": "uname -r",
                     "descripcion": "mostrar la versión del kernel usado. ",
-                    "show":true
-                },
-                {
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
+                  },
+                  {
                     "comando": "dmidecode -q",
                     "descripcion": "mostrar los componentes (hardware) del sistema",
-                    "show":true
-                },
-                {
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
+                  },
+                  {
                     "comando": "rm",
                     "descripcion": "Remueve el archivo",
+                    "show":true,
                     "ejemplos":[
-                        {"ejemplo":"rm <nombre del archivo>"},
-                        {"ejemplo":"rmdir <nombre carpeta> #elimina carpeta vacia "},
-                        {"ejemplo":"rm -R <nombre carpeta> #elimina carpeta y archivos que esten dentro de la carpeta"}
+                      {"ejemplo":"rm <nombre del archivo>"},
+                      {"ejemplo":"rmdir <nombre carpeta> #elimina carpeta vacia "},
+                      {"ejemplo":"rm -R <nombre carpeta> #elimina carpeta y archivos que esten dentro de la carpeta"}
                     ],
-                    "show":true
-                },
-                {
+                    "url":""
+                  },
+                  {
                     "comando": "date",
                     "descripcion": "Mostrar la fecha del sistema",
-                    "show":true
-                },
-                {
+                    "show":true,
+                    "ejemplos":[],
+                    "url":""
+                  },
+                  {
                     "comando": "lscpu",
                     "descripcion": "Obtener información de la CPU",
-                    "show": true
-                },
-                {
+                    "show": true,
+                    "ejemplos":[],
+                    "url":""
+                  },
+                  {
                     "comando": "lspci",
                     "descripcion": "l comando lspci realiza un listado de los buses PCI y proporciona detalles sobre los dispositivos conectados a ellos, como adaptadores VGA, adaptadores de red, puertos USB, etc.",
-                    "show": true
-                },
-                {
+                    "show": true,
+                    "ejemplos":[],
+                    "url":""
+                  },
+                  {
                     "comando": "top",
                     "descripcion": "El comando top  nos ayuda a conocer los procesos de ejecución del sistema (y más cosas) en tiempo real y es una de las herramientas más importantes para un administrador.",
                     "show": true
-                },
-                {
+                  },
+                  {
                     "comando": "man",
                     "descripcion": "Muestra las páginas de ayuda (manuales) de los distintos comandos.",
                     "show": true,
                     "ejemplos":[
-                        {"ejemplo":"man ls #Me muestra la informacion del ls"}
-                    ]
-                },
-                {
+                      {"ejemplo":"man ls #Me muestra la informacion del ls"}
+                    ],
+                    "url":""
+                  },
+                  {
                     "comando": "sudo su -",
                     "descripcion": "El comando su es utilizando para cambiar el usuario actual a otro usuario.",
-                    "show": true
-                },
-                {
+                    "show": true,
+                    "ejemplos":[],
+                    "url":""
+                  },
+                  {
                     "comando": "mv",
                     "descripcion": "Moviendo archivo.",
                     "show": true,
                     "ejemplos":[
-                        {"ejemplo":"mv p1.txt directorio #aqui estamos moviendo el archivo p1. tt al directorio (si lo queremos mover a un directorio del home podemos utilizar ~)"}
-                    ]
-                },
-                {
+                      {"ejemplo":"mv p1.txt directorio #aqui estamos moviendo el archivo p1. tt al directorio (si lo queremos mover a un directorio del home podemos utilizar ~)"}
+                    ],
+                    "url":""
+                  },
+                  {
                     "comando": "cp",
                     "descripcion": "Copiando archivo.",
                     "show": true,
                     "ejemplos":[
-                        {"ejemplo":"mv p1.txt directorio #aqui estamos moviendo el archivo p1. tt al directorio (si lo queremos mover a un directorio del home podemos utilizar ~)"}
-                    ]
-                },
-                {
+                      {"ejemplo":"mv p1.txt directorio #aqui estamos moviendo el archivo p1. tt al directorio (si lo queremos mover a un directorio del home podemos utilizar ~)"}
+                    ],
+                    "url":""
+                  },
+                  {
                     "comando": "pushd",
                     "descripcion": "Comando al cual podemos decirle a nuestro shell que guarde temporalmente la ubicación actual de mi directorio y acto seguido posicionarnos en una nueva carpeta.",
                     "show": true,
                     "ejemplos":[
-                        {"ejemplo":"pushd #Voy al directorio"}
-                    ]
-                },
-                {
+                      {"ejemplo":"pushd #Voy al directorio"}
+                    ],
+                    "url":""
+                  },
+                  {
                     "comando": "popd",
                     "descripcion": "Con este comando volveremos a la carpeta original sin necesidad de andar escribiendo toda la ruta original.",
                     "show": true,
                     "ejemplos":[
-                        {"ejemplo":"popd #Me regreso al directorio donde estaba anteriormente (esto me sirve cuando estoy cambiando en direferentes proyecto)"}
-                    ]
-                },
-                {
+                      {"ejemplo":"popd #Me regreso al directorio donde estaba anteriormente (esto me sirve cuando estoy cambiando en direferentes proyecto)"}
+                    ],
+                    "url":""
+                  },
+                  {
                     "comando": "kill",
                     "descripcion": "Con este comando matamos procesos.",
                     "show": true,
                     "ejemplos":[
-                        {"ejemplo":"kill -9 12345 #Matar el proceso (PID)"}
-                    ]
-                },
-                {
-                    "comando": "greep",
+                      {"ejemplo":"kill -9 12345 #Matar el proceso (PID)"}
+                    ],
+                    "url":""
+                  },
+                  {
+                    "comando": "grep",
                     "descripcion": "El comando grep nos permite buscar, dentro de los archivos, las líneas que concuerdan con un patrón.",
                     "show": true,
                     "ejemplos":[
-                        {"ejemplo":"grep-r . -e fernando  #Va a buscar en el directorio de de forma recursiva la expresion(-e) fernando"},
-                        {"ejemplo":"grep -r file -e while #traeme todos los texto que diga while (trae el archivo donde se encontro la palabra while)"},
-                        {"ejemplo":"grep -n -r file -e while #es igual al anterior con diferencia a la bandera -n que me va a indicar el numero de linea donde esta esa palabra"},
-                        {"ejemplo": "grep -n  streams.php -e while | wc -l  # aqui busca la palabra while en el archivo indicado y luego te dice cuantas palabras son    wc(cuantas son)"},
-                        {"ejemplo":"grep -V while  #Excluyas y no lo muestres"},
-                        {"ejemplo":"grep -i while  #cuando ytilizamos la opcion de -i no importa si la palabra en minuscula o mayuscula"}                        
-                    ]
-                },
-                {
+                      {"ejemplo":"grep-r . -e fernando  #Va a buscar en el directorio de de forma recursiva la expresion(-e) fernando"},
+                      {"ejemplo":"grep -r file -e while #traeme todos los texto que diga while (trae el archivo donde se encontro la palabra while)"},
+                      {"ejemplo":"grep -n -r file -e while #es igual al anterior con diferencia a la bandera -n que me va a indicar el numero de linea donde esta esa palabra"},
+                      {"ejemplo": "grep -n  streams.php -e while | wc -l  # aqui busca la palabra while en el archivo indicado y luego te dice cuantas palabras son    wc(cuantas son)"},
+                      {"ejemplo":"grep -V while  #Excluyas y no lo muestres"},
+                      {"ejemplo":"grep -i while  #cuando ytilizamos la opcion de -i no importa si la palabra en minuscula o mayuscula"}
+                    ],
+                    "url":"url"
+                  },
+                  {
                     "comando":"find",
                     "descripcion": "el comando find el cual nos permite buscar archivos/directorios bajo una serie de criterios que nosotros le argumentemos.",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo": "find . -name *.php -type -f | wc -l #busca el archivo con la extencion .php y te dice cuantos archivos encontro"},
-                        {"ejemplo": "find . -name *.php  | wc -l # Es lo mismo que el comando de arriba"},
-                        {"ejemplo": "find . -type d  #Busca cuantos directorios hay dentro de ese directorio"},
-                        {"ejemplo": "find . -type d | wc -l  #muestra como resultado el numero de directorios encontrados"}
-                    ]    
-                },
-                {
+                      {"ejemplo": "find . -name *.php -type -f | wc -l #busca el archivo con la extencion .php y te dice cuantos archivos encontro"},
+                      {"ejemplo": "find . -name *.php  | wc -l # Es lo mismo que el comando de arriba"},
+                      {"ejemplo": "find . -type d  #Busca cuantos directorios hay dentro de ese directorio"},
+                      {"ejemplo": "find . -type d | wc -l  #muestra como resultado el numero de directorios encontrados"}
+                    ],
+                    "url":""
+                  },
+                  {
                     "comando":"curl",
                     "descripcion": "Curl se usa para transferir archivos desde un servidor, es compatible con varios protocolos como HTTP, HTTPS, FTP, FTPS, IMAP, IMAPS, DICT, ARCHIVO, GOPHER, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET y TFTP, etc.",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo": "culr https://raw.githubusercontent.com/datasets/airport-codes/master/data/airport-codes.csv  #Muestra el archivo en pantalla"},
-                        {"ejemplo": "culr https://raw.githubusercontent.com/datasets/airport-codes/master/data/airport-codes.csv >aeropuertor.csv #Descarga el archivo"},
-                        {"ejemplo": "culr https://raw.githubusercontent.com/datasets/airport-codes/master/data/airport-codes.csv -o aeropuertor.csv #Otra manera de darcagar el archivo"},
-                        {"ejemplo": "curl https://fernandoserra.github.io/ "},
-                        {"ejemplo": "curl ifconfig.me #me muestra la ip publica de la maquina donde estoy trabajando"}
-                    ]    
-                },
-                {
+                      {"ejemplo": "culr https://raw.githubusercontent.com/datasets/airport-codes/master/data/airport-codes.csv  #Muestra el archivo en pantalla"},
+                      {"ejemplo": "culr https://raw.githubusercontent.com/datasets/airport-codes/master/data/airport-codes.csv >aeropuertor.csv #Descarga el archivo"},
+                      {"ejemplo": "culr https://raw.githubusercontent.com/datasets/airport-codes/master/data/airport-codes.csv -o aeropuertor.csv #Otra manera de darcagar el archivo"},
+                      {"ejemplo": "curl https://fernandoserra.github.io/ "},
+                      {"ejemplo": "curl ifconfig.me #me muestra la ip publica de la maquina donde estoy trabajando"}
+                    ],
+                    "url":""
+                  },
+                  {
                     "comando":"zip",
                     "descripcion": "Comprimiendo.",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo": "zip varioscsv.zip *csv #comprimiendo todos los archivos zip que tenemos en el directorio y lo comprimimos en un archivo llamado varioscsv.zip"}                        
-                    ]    
-                },
-                {
+                      {"ejemplo": "zip varioscsv.zip *csv #comprimiendo todos los archivos zip que tenemos en el directorio y lo comprimimos en un archivo llamado varioscsv.zip"}
+                    ],
+                    "url":""
+                  },
+                  {
                     "comando":"unzip",
                     "descripcion": "Descomprimir.",
                     "show":true,
-                    "ejemplos":[                        
-                        {"ejemplo": "unzip -vl varioscsv.zip  #me muestra el listado de los archivos que estan comprimido n varioscsv.zip"},
-                        {"ejemplo": "unzip varioscsv.zip #descomprime el archivo varioscsv.zip"}
-                        
-                    ]    
-                },
-                {
+                    "ejemplos":[
+                      {"ejemplo": "unzip -vl varioscsv.zip  #me muestra el listado de los archivos que estan comprimido n varioscsv.zip"},
+                      {"ejemplo": "unzip varioscsv.zip #descomprime el archivo varioscsv.zip"}
+                    ],
+                    "url":""
+              
+                  },
+                  {
                     "comando":"nautilus",
                     "descripcion": "Abrir directorios rápidamente desde nuestra ubicación en la terminal.",
                     "show":true,
-                    "ejemplos":[                        
-                        {"ejemplo": "nautilus #nombre del directorio"}
-                        
-                    ]    
-                },
-                {
+                    "ejemplos":[
+                      {"ejemplo": "nautilus #nombre del directorio"}
+                    ],
+                    "url":""
+                  },
+                  {
                     "comando":"xdg-open",
                     "descripcion": "Abrir directorios rápidamente desde nuestra ubicación en la terminal.",
                     "show":true,
-                    "ejemplos":[                        
-                        {"ejemplo": "xdg-open #nombre del directorio"}
-                        
-                    ]    
-                }
-
-
-
+                    "ejemplos":[
+                      {"ejemplo": "xdg-open #nombre del directorio"}
+                    ],
+                    "url":""
+                  }
 
             ]
         }

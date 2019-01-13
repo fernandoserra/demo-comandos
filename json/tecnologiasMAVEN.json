@@ -9,92 +9,92 @@
                     "descripcion": "Compilar. La primera vez que se ejecuta un comando Maven descarga todos los plugins y dependencias que necesita, por lo que tardará un poco más de tiempo, el resto de veces, únicamente descargará lo que haya cambiado.",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"mvn compile"}
+                      {"ejemplo":"mvn compile"}
                     ],
                     "url":"http://www.notodocodigo.com/maven/principales-comandos/"
-                },
-                {
+                  },
+                  {
                     "comando": "test",
                     "categoria":"",
                     "descripcion": "Compilar fuentes de prueba y ejecutar pruebas unitarias.",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"mvn test"}
+                      {"ejemplo":"mvn test"}
                     ],
                     "url":"http://www.notodocodigo.com/maven/principales-comandos/"
-                },
-                {
+                  },
+                  {
                     "comando": "package",
                     "categoria":"",
                     "descripcion": "Para empaquetar nuestro proyecto.",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"mvn package"},
-                        {"ejemplo":"mvn –Dmaven.test.skip=true package #Si no se quiere pasar las pruebas unitarias al hacer el paquete"},
-                        {"ejemplo":"mvn -o package # Si quieres construir tus paquetes offline"}
+                      {"ejemplo":"mvn package"},
+                      {"ejemplo":"mvn –Dmaven.test.skip=true package #Si no se quiere pasar las pruebas unitarias al hacer el paquete"},
+                      {"ejemplo":"mvn -o package # Si quieres construir tus paquetes offline"}
                     ],
                     "url":"http://www.notodocodigo.com/maven/principales-comandos/"
-                },
-                {
+                  },
+                  {
                     "comando": "site",
                     "categoria":"",
                     "descripcion": "Crear un sitio Web con la información de nuestro proyecto.",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"mvn site"}
+                      {"ejemplo":"mvn site"}
                     ],
                     "url":"http://www.notodocodigo.com/maven/principales-comandos/"
-                },
-                {
+                  },
+                  {
                     "comando": "clean",
                     "categoria":"",
                     "descripcion": "Borrar el directorio target para dejarlo listo para compilar de nuevo.",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"mvn clean"}
+                      {"ejemplo":"mvn clean"}
                     ],
                     "url":"http://www.notodocodigo.com/maven/principales-comandos/"
-                },
-                {
+                  },
+                  {
                     "comando": "deploy",
                     "categoria":"",
                     "descripcion": "Lleva el jar a nuestro servidor de jars. Queda 'visible' para otros proyectos maven en otros ordenadores. Este comando necesita que a maven se le haya indicado dónde está dicho servidor de jars.",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"mvn deploy"}
+                      {"ejemplo":"mvn deploy"}
                     ],
                     "url":"http://chuwiki.chuidiang.org/index.php?title=Tareas_b%C3%A1sicas_de_Maven"
-                },
-                {
+                  },
+                  {
                     "comando": "javadoc:javadoc",
                     "categoria":"",
                     "descripcion": "Genera la documentación javadoc de nuestro proyecto.",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"mvn javadoc:javadoc"}
+                      {"ejemplo":"mvn javadoc:javadoc"}
                     ],
                     "url":"http://chuwiki.chuidiang.org/index.php?title=Tareas_b%C3%A1sicas_de_Maven"
-                },
-                {
+                  },
+                  {
                     "comando": "eclipse:eclipse ",
                     "categoria":"",
                     "descripcion": "Nos genera los ficheros típicos de un proyecto eclipse, de forma que podemos importar el proyecto directamente en nuestro entorno de desarrollo eclipse.",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"mvn eclipse:eclipse"}
+                      {"ejemplo":"mvn eclipse:eclipse"}
                     ],
                     "url":"http://chuwiki.chuidiang.org/index.php?title=Tareas_b%C3%A1sicas_de_Maven"
-                },
-                {
+                  },
+                  {
                     "comando": "idea:idea",
                     "categoria":"",
                     "descripcion": "Nos genera los ficheros típicos de un proyecto IntelliJ IDEA, de forma que podemos importar el proyecto directamente en nuestro entorno de desarrollo IntelliJ IDEA.",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"mvn idea:idea"}
+                      {"ejemplo":"mvn idea:idea"}
                     ],
                     "url":"http://chuwiki.chuidiang.org/index.php?title=Tareas_b%C3%A1sicas_de_Maven"
-                }
+                  }
 
             ]
         }

@@ -10,732 +10,732 @@
                     "show":true,
                     "ejemplos":[],
                     "url":"https://git-scm.com/book/es/v1/Git-en-entornos-distribuidos-Gestionando-un-proyecto"
-                },
-                {
+                  },
+                  {
                     "comando": "am",
                     "categoria":"",
                     "descripcion": "Aplicar parches recibidos por correo electronico",
                     "show":true,
                     "ejemplos":[],
                     "url":"https://git-scm.com/book/es/v1/Git-en-entornos-distribuidos-Gestionando-un-proyecto"
-                },
-                {
+                  },
+                  {
                     "comando": "archive",
                     "categoria":"",
                     "descripcion": "Crea un archivo del formato especificado que contiene la estructura de árbol para el árbol con nombre y lo escribe en el resultado estándar. Si se especifica <prefijo>, se antepone a los nombres de archivo en el archivo.",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "amend",
                     "categoria":"",
                     "descripcion": "Concatena nuevos cambios con cambios previos (reemplaza el ultimo commit)",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git commit – amend “Permite agregar y reemplaza el ultimo commit” "},
-                        {"ejemplo":"git commit – amend –m “Este es el nuevo mensaje”"}
+                      {"ejemplo":"git commit – amend “Permite agregar y reemplaza el ultimo commit” "},
+                      {"ejemplo":"git commit – amend –m “Este es el nuevo mensaje”"}
                     ],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "bisect",
                     "categoria":"",
                     "descripcion": " Búsqueda binaria. El comando bisect hace una búsqueda binaria a través de su historial de commits para ayudarle a identificar lo más rápidamente posible qué commit introdujo un problema ",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "branch",
                     "categoria":"",
                     "descripcion": "Lista, crea o elimina ramas",
                     "show":true,
                     "ejemplos":[
-                        { "ejemplo":"git branch <nombre-rama> # crea rama." },
-                        { "ejemplo":"git branch # lista ramas"},
-                        { "ejemplo":"git branch -a # lista ramas remotas y locales"},
-                        { "ejemplo":"git branch -r # lista ramas remotas"},
-                        { "ejemplo":"git branch -d <rama> # elimina la rama"},
-                        { "ejemplo":"git branch -D #La 'D' mayuscula hace un borrado forzado asi la rama tenga cambio lo borra"},
-                        { "ejemplo":"git branch -v # lista ramas mostrando último commit"},
-                        { "ejemplo":"git branch -m <nombre-rama> <nombre-rama-nueva> #Renombrando rama"},
-                        { "ejemplo":"git branch --merged #Muestra las ramas mescladas"},
-                        { "ejemplo":"git branch --no-merged #Muestas las ramas no mescladas aun"},
-                        { "ejemplo":"git push origin --delete <branchName> # Elimina una rama del servidor "},
-                        { "ejemplo":"git checkout <nombre-rama> # cambiar a la rama especificada. "},
-                        { "ejemplo":"git checkout -b <nombre-rama> # crea y cambia de rama "},
-                        { "ejemplo":"git merge <rama> # Mezcla la rama actual con <rama>"},
-                        { "ejemplo":">git branch --merged #Lista ramas que han sido mezcladas con la actual. Si no tienen un *, pueden borrarse, ya que significa que se han incorporado los cambios en la rama actual."},
-                        { "ejemplo":">git branch --no-merged #Lista ramas que no han sido incorporadas a la actual."}
+                      { "ejemplo":"git branch <nombre-rama> # crea rama." },
+                      { "ejemplo":"git branch # lista ramas"},
+                      { "ejemplo":"git branch -a # lista ramas remotas y locales"},
+                      { "ejemplo":"git branch -r # lista ramas remotas"},
+                      { "ejemplo":"git branch -d <rama> # elimina la rama"},
+                      { "ejemplo":"git branch -D #La 'D' mayuscula hace un borrado forzado asi la rama tenga cambio lo borra"},
+                      { "ejemplo":"git branch -v # lista ramas mostrando último commit"},
+                      { "ejemplo":"git branch -m <nombre-rama> <nombre-rama-nueva> #Renombrando rama"},
+                      { "ejemplo":"git branch --merged #Muestra las ramas mescladas"},
+                      { "ejemplo":"git branch --no-merged #Muestas las ramas no mescladas aun"},
+                      { "ejemplo":"git push origin --delete <branchName> # Elimina una rama del servidor "},
+                      { "ejemplo":"git checkout <nombre-rama> # cambiar a la rama especificada. "},
+                      { "ejemplo":"git checkout -b <nombre-rama> # crea y cambia de rama "},
+                      { "ejemplo":"git merge <rama> # Mezcla la rama actual con <rama>"},
+                      { "ejemplo":">git branch --merged #Lista ramas que han sido mezcladas con la actual. Si no tienen un *, pueden borrarse, ya que significa que se han incorporado los cambios en la rama actual."},
+                      { "ejemplo":">git branch --no-merged #Lista ramas que no han sido incorporadas a la actual."}
                     ],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "bundle",
                     "categoria":"",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
-                    "url":""  
-                },
-                {
+                    "url":""
+                  },
+                  {
                     "comando": "checkout",
                     "categoria":"",
                     "descripcion": "El comando checkout se puede usar para crear ramas o cambiar entre ellas. Por ejemplo, el siguiente comando crea una nueva y se cambia a ella:",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"command git checkout -b <banch-name>"},
-                        {"ejemplo":"git checkout <branch-name> # Para cambiar de una rama a otra"}
+                      {"ejemplo":"command git checkout -b <banch-name>"},
+                      {"ejemplo":"git checkout <branch-name> # Para cambiar de una rama a otra"}
                     ],
                     "url":""
-                    
-                },
-                {
+              
+                  },
+                  {
                     "comando": "cherry-pick",
                     "categoria":"",
                     "descripcion": "Este comando permite coger uno o varios commits de otra rama sin tener que hacer un merge completo",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git cherry-pick e43a6fd3e94888d76779ad79fb568ed180e5fcdf"}
+                      {"ejemplo":"git cherry-pick e43a6fd3e94888d76779ad79fb568ed180e5fcdf"}
                     ],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "citool",
                     "categoria":"",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "clean",
                     "categoria":"",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "clone",
                     "categoria":"",
                     "descripcion": "Clonando un repositorio existente.  Si deseas obtener una copia de un repositorio Git existente —por ejemplo, un proyecto en el que te gustaría contribuir— el comando que necesitas es git clone",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git clone git://github.com/schacon/grit.git"}
+                      {"ejemplo":"git clone git://github.com/schacon/grit.git"}
                     ],
                     "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Obteniendo-un-repositorio-Git"
-                },
-                {
+                  },
+                  {
                     "comando": "commit",
                     "categoria":"",
                     "descripcion": "Guardando cambios en el repositorio",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git commit"},
-                        {"ejemplo":"git commit -m # Escribe tu mensaje de confirmación desde la propia línea de comandos"},
-                        {"ejemplo":"git commit -v # muestra el diff en el editor"},
-                        {"ejemplo":"git commit -a -m 'mensaje' # No hace falta git add"}
+                      {"ejemplo":"git commit"},
+                      {"ejemplo":"git commit -m # Escribe tu mensaje de confirmación desde la propia línea de comandos"},
+                      {"ejemplo":"git commit -v # muestra el diff en el editor"},
+                      {"ejemplo":"git commit -a -m 'mensaje' # No hace falta git add"}
                     ],
-                    "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Guardando-cambios-en-el-repositorio"  
-                },
-                {
+                    "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Guardando-cambios-en-el-repositorio"
+                  },
+                  {
                     "comando": "describe",
                     "categoria":"",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "diff",
                     "categoria":"",
                     "descripcion": "Este comando se usa para hacer una lista de conflictos. Para poder ver conflictos con el archivo base usa:",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git diff --base <file-name>"},
-                        {"ejemplo":"git diff [version 1] vs [version 2]"},
-                        {"ejemplo":"git diff <source-branch> <target-branch> #El siguiente comando se usa para ver los conflictos que hay entre ramas que están por ser fusionadas para poder fusionarlas sin problemas"},
-                        {"ejemplo":"git diff #Para solo ver una lista de todos los conflictos presentes"}
-                    
+                      {"ejemplo":"git diff --base <file-name>"},
+                      {"ejemplo":"git diff [version 1] vs [version 2]"},
+                      {"ejemplo":"git diff <source-branch> <target-branch> #El siguiente comando se usa para ver los conflictos que hay entre ramas que están por ser fusionadas para poder fusionarlas sin problemas"},
+                      {"ejemplo":"git diff #Para solo ver una lista de todos los conflictos presentes"}
+              
                     ],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "fetch",
                     "categoria":"",
                     "descripcion": "Recibiendo de tus repositorios remotos. Para recuperar datos de tus repositorios remotos puedes ejecutar:",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git fetch [remote-name]"},
-                        {"ejemplo":"git fetch origin "},
-                        {"ejemplo":"git fetch origin <branch> # Trae la rama en especifica del repositorio remoto "}
+                      {"ejemplo":"git fetch [remote-name]"},
+                      {"ejemplo":"git fetch origin "},
+                      {"ejemplo":"git fetch origin <branch> # Trae la rama en especifica del repositorio remoto "}
                     ],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "format-patch",
                     "categoria":"",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "gc",
                     "categoria":"Mantenimiento y recuperación de datos",
                     "descripcion": "De cuando en cuando, Git lanza automáticamente un comando llamado 'auto gc'. La mayor parte de las veces, este comando no hace nada. Pero, cuando hay demasiados objetos sueltos, (objetos fuera de un archivo empaquetador), o demasiados archivos empaquetadores, Git lanza un comando git gc completo. gc corresponde a 'recogida de basura' (garbage collect)",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git gc"},
-                        {"ejemplo":"git gc --auto"}
+                      {"ejemplo":"git gc"},
+                      {"ejemplo":"git gc --auto"}
                     ],
                     "url":"https://git-scm.com/book/es/v1/Los-entresijos-internos-de-Git-Mantenimiento-y-recuperaci%C3%B3n-de-datos"
-                },
-                {
+                  },
+                  {
                     "comando": "grep",
                     "categoria":"",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "gui",
                     "categoria":"",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "init",
                     "categoria":"",
                     "descripcion": "Inicializando un repositorio en un directorio existente",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git init"}
+                      {"ejemplo":"git init"}
                     ],
-                    "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Obteniendo-un-repositorio-Git"  
-                },
-                {
+                    "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Obteniendo-un-repositorio-Git"
+                  },
+                  {
                     "comando": "gitk",
                     "categoria":"",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "log",
                     "categoria":"",
                     "descripcion": "Viendo el histórico de confirmaciones. Después de haber hecho varias confirmaciones, o si has clonado un repositorio que ya tenía un histórico de confirmaciones, probablemente quieras mirar atrás para ver qué modificaciones se han llevado a cabo. La herramienta más básica y potente para hacer esto es el comando git log.",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git log"},
-                        {"ejemplo":"git log --follow -p <archivo> #Examinar el historial de cambios de un archivo"},
-                        {"ejemplo":"git log | cat # Mantiene los commit en pantalla "},
-                        {"ejemplo":"git log --stat #ver algunas estadísticas de cada confirmación"},
-                        {"ejemplo":"git log --pretty=oneline # modifica el formato de la salida  (short, full y fuller)"},
-                        {"ejemplo":"git log --oneline --decorate --graph --all "},
-                        {"ejemplo":"git log --oneline #Para ver una versión más compacta del historial de commits "},
-                        {"ejemplo":"git log -p #Muestra el diff introducido en cada commit "},
-                        {"ejemplo":"git log -n #Siendo n un número, muestra los últimos n commits "},
-                        {"ejemplo":"git log <Archivo> #Permite especificar un nombre de archivo o directorio, para ver commits que introdujeron cambios en ese archivo. "},
-                        {"ejemplo":"git log <branchA> ^ <branchB>   #Compara ramas mirando los commits de una rama que no son alcanzables desde la otra."},
-                        {"ejemplo":"git log --author=Linus [-<N>]   #Busca los commits de un autor específico, incluso buscar los N últimos."},
-                        {"ejemplo":"git log --grep=<word>   #Filtra commits por mensaje dándole una cadena clave"},
-                        {"ejemplo":"git log --stat   #Muestra diffstat de los cambios introducidos en cada commit"}
-
-
+                      {"ejemplo":"git log"},
+                      {"ejemplo":"git log --follow -p <archivo> #Examinar el historial de cambios de un archivo"},
+                      {"ejemplo":"git log | cat # Mantiene los commit en pantalla "},
+                      {"ejemplo":"git log --stat #ver algunas estadísticas de cada confirmación"},
+                      {"ejemplo":"git log --pretty=oneline # modifica el formato de la salida  (short, full y fuller)"},
+                      {"ejemplo":"git log --oneline --decorate --graph --all "},
+                      {"ejemplo":"git log --oneline #Para ver una versión más compacta del historial de commits "},
+                      {"ejemplo":"git log -p #Muestra el diff introducido en cada commit "},
+                      {"ejemplo":"git log -n #Siendo n un número, muestra los últimos n commits "},
+                      {"ejemplo":"git log <Archivo> #Permite especificar un nombre de archivo o directorio, para ver commits que introdujeron cambios en ese archivo. "},
+                      {"ejemplo":"git log <branchA> ^ <branchB>   #Compara ramas mirando los commits de una rama que no son alcanzables desde la otra."},
+                      {"ejemplo":"git log --author=Linus [-<N>]   #Busca los commits de un autor específico, incluso buscar los N últimos."},
+                      {"ejemplo":"git log --grep=<word>   #Filtra commits por mensaje dándole una cadena clave"},
+                      {"ejemplo":"git log --stat   #Muestra diffstat de los cambios introducidos en cada commit"}
+              
+              
                     ],
                     "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Viendo-el-hist%C3%B3rico-de-confirmaciones"
-                },
-                {
+                  },
+                  {
                     "comando": "merge",
                     "categoria":"",
                     "descripcion": "Unir una rama a la rama actual",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo": "git merge <rama> # Mezcla la rama actual con <rama>"}
+                      {"ejemplo": "git merge <rama> # Mezcla la rama actual con <rama>"}
                     ],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "mv",
                     "categoria":"",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "notes",
                     "categoria":"",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "pull",
                     "categoria":"",
                     "descripcion": "Para poder fusionar todos los cambios que se han hecho en el repositorio local trabajando",
                     "show":true,
                     "ejemplos":[{"ejemplo":" git pull"}],
                     "url":"https://www.hostinger.es/tutoriales/comandos-de-git"
-                },
-                {
+                  },
+                  {
                     "comando": "push",
                     "categoria":"",
                     "descripcion": "Enviando a tus repositorios remotos. Cuando tu proyecto se encuentra en un estado que quieres compartir, tienes que enviarlo a un repositorio remoto.",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git push origin master"},
-                        {"ejemplo":"git push -u origin --all # enviando repositorio con todas las ramas"},
-                        {"ejemplo":"git push -u origin --tags"},
-                        {"ejemplo":"git push origin <branch> #Sube rama local a repositorio remoto"}
+                      {"ejemplo":"git push origin master"},
+                      {"ejemplo":"git push -u origin --all # enviando repositorio con todas las ramas"},
+                      {"ejemplo":"git push -u origin --tags"},
+                      {"ejemplo":"git push origin <branch> #Sube rama local a repositorio remoto"}
                     ],
                     "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Trabajando-con-repositorios-remotos"
-                },
-                {
+                  },
+                  {
                     "comando": "rebase",
                     "categoria":"",
                     "descripcion": "Que hace: Integra y reescribes las ramas. Que destaca: historial lineal.  Cuando usar?: Para integrar los cambios del repositorio remote a su ambiente local.  Peligro:Modifica el contenido de una rama compartida. ",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git rebase <branch> "}
+                      {"ejemplo":"git rebase <branch> "}
                     ],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "reset",
                     "categoria":"",
                     "descripcion": "Borrar el último commit que hemos hecho (hay tres tipos de reset )",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git reset HEAD"},
-                        {"ejemplo":"git reset --merge #Deshacer una fusión"},
-                        {"ejemplo":"git reset --soft HEAD~1  # Te quedas con los cambios en local pero deshaces el commit "}
+                      {"ejemplo":"git reset HEAD"},
+                      {"ejemplo":"git reset --merge #Deshacer una fusión"},
+                      {"ejemplo":"git reset --soft HEAD~1  # Te quedas con los cambios en local pero deshaces el commit "}
                     ],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "revert",
                     "categoria":"",
                     "descripcion": "Deshacer el contenido de un commit (revertir un commit)",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git revert HEAD"}
+                      {"ejemplo":"git revert HEAD"}
                     ],
                     "url":""
-                },
-
-                {
+                  },
+              
+                  {
                     "comando": "rm",
                     "categoria":"",
                     "descripcion": "Eliminando archivos. Para eliminar un archivo de Git, debes eliminarlo de tus archivos bajo seguimiento (más concretamente, debes eliminarlo de tu área de preparación), y después confirmar. El comando git rm se encarga de eso, y también elimina el archivo de tu directorio de trabajo, para que no lo veas entre los archivos sin seguimiento.",
                     "show":true,
                     "ejemplos":[],
-                    "url":""  
-                },
-                {
+                    "url":""
+                  },
+                  {
                     "comando": "shortlog",
                     "categoria":"",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "show",
                     "categoria":"",
                     "descripcion": "Mostrar un fichero de una rama (o commit) dado:",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git show <commit o rama>:<nombre-fichero>"},
-                        {"ejemplo":"git show --stat <commit> #Listado de todos los archivos de la confirmacion"},
-                        {"ejemplo":"git show --stat --name-only <commit> #Listado de todos los archivos de la confirmacion"}
+                      {"ejemplo":"git show <commit o rama>:<nombre-fichero>"},
+                      {"ejemplo":"git show --stat <commit> #Listado de todos los archivos de la confirmacion"},
+                      {"ejemplo":"git show --stat --name-only <commit> #Listado de todos los archivos de la confirmacion"}
                     ],
                     "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Viendo-el-hist%C3%B3rico-de-confirmaciones"
-                },
-                {
+                  },
+                  {
                     "comando": "stash",
                     "categoria":"",
                     "descripcion": "Guardando cambios temporalmente",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git stash list #Nos muestra la lista de stash que tengamos"},
-                        {"ejemplo":"git stash drop stash@{numero} #Nos permite borrar un stash. "},
-                        {"ejemplo":"git stash apply #Aplicamos el último cambio"}
+                      {"ejemplo":"git stash list #Nos muestra la lista de stash que tengamos"},
+                      {"ejemplo":"git stash drop stash@{numero} #Nos permite borrar un stash. "},
+                      {"ejemplo":"git stash apply #Aplicamos el último cambio"}
                     ],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "status",
                     "categoria":"",
                     "descripcion": "Comprobando el estado de tus archivos.  Tu principal herramienta para determinar qué archivos están en qué estado es el comando git status.",
                     "show":true,
                     "ejemplos":[{"ejemplo":"git status"}],
                     "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Guardando-cambios-en-el-repositorio"
-                },
-                {
+                  },
+                  {
                     "comando": "submodule",
                     "categoria":"",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "tag",
                     "categoria":"",
                     "descripcion": "Listar las etiquetas disponibles en Git es sencillo, Simplemente escribe git tag",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git tag"},
-                        {"ejemplo":"git tag -a v1.4 -m 'my version 1.4'  # Crear una etiqueta anotada en Git "},
-                        {"ejemplo":"$ git -l #Listando etiquetas"},
-                        {"ejemplo":"$ git tag 0.3 159397ecc31356e782c49db478de964129a232ed #Creando etiqueta de un commit en especifico"},
-                        {"ejemplo":"$ git tag -d 1.0 #Borrando un Tag"},
-                        {"ejemplo":"$ git tag -f-a  0.1 'iniciando el proyecto' + sha #Renombrado Tag"},
-                        {"ejemplo":"$ git tag -l 'v1.4.2.*'  #buscar etiquetas de acuerdo a un patrón en particular"}
+                      {"ejemplo":"git tag"},
+                      {"ejemplo":"git tag -a v1.4 -m 'my version 1.4'  # Crear una etiqueta anotada en Git "},
+                      {"ejemplo":"$ git -l #Listando etiquetas"},
+                      {"ejemplo":"$ git tag 0.3 159397ecc31356e782c49db478de964129a232ed #Creando etiqueta de un commit en especifico"},
+                      {"ejemplo":"$ git tag -d 1.0 #Borrando un Tag"},
+                      {"ejemplo":"$ git tag -f-a  0.1 'iniciando el proyecto' + sha #Renombrado Tag"},
+                      {"ejemplo":"$ git tag -l 'v1.4.2.*'  #buscar etiquetas de acuerdo a un patrón en particular"}
                     ],
-                    "url":""  
-                },
-                {
+                    "url":""
+                  },
+                  {
                     "comando": "worktree",
                     "categoria":"",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "config",
                     "categoria":"",
                     "descripcion": "Configurar git para tenerlo listo para trabajar.",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git config --global --list #obtiene la lista de configuracion global"},
-                        {"ejemplo":"git config --global user.name 'Su Nombre' "},
-                        {"ejemplo":"git config --global user.email 'su_email@cualsea.com'"},
-                        {"ejemplo":"git config --list #Ver configuracion local "},
-                        {"ejemplo":"git config --global core.editor 'code --wait' #Configurando Editor"}
-                        
-
+                      {"ejemplo":"git config --global --list #obtiene la lista de configuracion global"},
+                      {"ejemplo":"git config --global user.name 'Su Nombre' "},
+                      {"ejemplo":"git config --global user.email 'su_email@cualsea.com'"},
+                      {"ejemplo":"git config --list #Ver configuracion local "},
+                      {"ejemplo":"git config --global core.editor 'code --wait' #Configurando Editor"}
+              
+              
                     ],
                     "url":"https://esparta.github.io/gitimmersion-spanish/lab_01.html"
-                    
-                },
-                {
+              
+                  },
+                  {
                     "comando": "fast-export",
                     "categoria":"",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "fast-import",
                     "categoria":"",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "filter-branch",
                     "categoria":"",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "mergetool",
                     "categoria":"",
                     "descripcion": "Herramienta gráfica para resolver conflictos",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "pack-refs",
                     "categoria":"",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "prune",
                     "categoria":"",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "reflog",
                     "categoria":"",
                     "descripcion": "Revisar donde has estado en cualquier momento pasado",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git reflog"}
+                      {"ejemplo":"git reflog"}
                     ],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "remote",
                     "categoria":"",
                     "descripcion": "Para ver qué repositorios remotos tienes configurados, puedes ejecutar el comando git remote. Mostrará una lista con los nombres de los remotos que hayas especificado.",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git remote"},
-                        {"ejemplo":"git remote show origin #Muestras todas las ramas remotas (asi no esten el repositorio local) "},
-                        {"ejemplo":"git remote add origin <https://gitlab.com/usuario/repositorio.git>"},
-                        {"ejemplo":"git remote -v  (muestra la URL asociada a cada repositorio remoto)"},
-                        {"ejemplo":"git remote set-url origin https://github.com/USERNAME/REPOSITORY.git #Cambie el directorio de trabajo actual"}
+                      {"ejemplo":"git remote"},
+                      {"ejemplo":"git remote show origin #Muestras todas las ramas remotas (asi no esten el repositorio local) "},
+                      {"ejemplo":"git remote add origin <https://gitlab.com/usuario/repositorio.git>"},
+                      {"ejemplo":"git remote -v  (muestra la URL asociada a cada repositorio remoto)"},
+                      {"ejemplo":"git remote set-url origin https://github.com/USERNAME/REPOSITORY.git #Cambie el directorio de trabajo actual"}
                     ],
                     "url":"https://git-scm.com/book/es/v1/Fundamentos-de-Git-Trabajando-con-repositorios-remotos"
-                },
-                {
+                  },
+                  {
                     "comando": "repack",
                     "categoria":"",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "replace",
                     "categoria":"",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "annotate",
                     "categoria":"Interrogadores",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "blame",
                     "categoria":"Interrogadores",
                     "descripcion": "Cuando se está rastreando un error dentro del código buscando localizar cuándo se introdujo y por qué, el mejor auxiliar para hacerlo es la anotación de archivos. Esta suele mostrar la confirmación de cambios (commit) que modificó por última vez cada una de las líneas en cualquiera de los archivos.",
                     "show":true,
                     "ejemplos":[
-                        {"ejemplo":"git blame <archivo> #Averiguar quién hizo qué cosa en un archivo "},
-                        {"ejemplo":"git blame -L 12,22 <archivo> # muestra cuando y por quién se modificaron de la linea 12 a la 22"}
+                      {"ejemplo":"git blame <archivo> #Averiguar quién hizo qué cosa en un archivo "},
+                      {"ejemplo":"git blame -L 12,22 <archivo> # muestra cuando y por quién se modificaron de la linea 12 a la 22"}
                     ],
                     "url":"https://git-scm.com/book/es/v1/Las-herramientas-de-Git-Depuraci%C3%B3n-con-Git"
-                },
-                {
+                  },
+                  {
                     "comando": "cherry",
                     "categoria":"Interrogadores",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "count-objects",
                     "categoria":"Interrogadores",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "difftool",
                     "categoria":"Interrogadores",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "fsck",
                     "categoria":"Interrogadores",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "get-tar-commit-id",
                     "categoria":"Interrogadores",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "help",
                     "categoria":"Interrogadores",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "instaweb",
                     "categoria":"Interrogadores",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "merge-tree",
                     "categoria":"Interrogadores",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "rerere",
                     "categoria":"Interrogadores",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "rev-parse",
                     "categoria":"Interrogadores",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "show-branch",
                     "categoria":"Interrogadores",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "verify-commit",
                     "categoria":"Interrogadores",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "verify-tag",
                     "categoria":"Interrogadores",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "gitweb",
                     "categoria":"Interrogadores",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "whatchanged",
                     "categoria":"Interrogadores",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "archimport",
                     "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "cvsexportcommit",
                     "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "cvsimport",
                     "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "cvsserver",
                     "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
-                    "url":"" 
-                },
-                {
+                    "url":""
+                  },
+                  {
                     "comando": "imap-send",
                     "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "p4",
                     "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "quiltimport",
                     "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "request-pull",
                     "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "send-email",
                     "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
                     "url":""
-                },
-                {
+                  },
+                  {
                     "comando": "svn",
                     "categoria":"Interactuando con otros (Estos comandos son para interactuar con SCM externo y con otras personas a través de parche a través de correo electrónico.)",
                     "descripcion": "",
                     "show":true,
                     "ejemplos":[],
-                    "url":""   
-                }
+                    "url":""
+                  }
 
             ]
         }
