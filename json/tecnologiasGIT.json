@@ -112,9 +112,12 @@
                   {
                     "comando": "clean",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "Limpiar tu directorio de trabajo, puedes hacerlo con git clean. Para remover los archivos que no están bajo el control de la versión en tu directorio de trabajo",
                     "show":true,
-                    "ejemplos":[],
+                    "ejemplos":[
+                      {"ejemplo":"git clean -f #Remueve cualquier archivo"},
+                      {"ejemplo":"git clean -f -d #Remueve cualquier archivo y también cualquier subdirectorio que se vuelva vacío como resultad"}
+                    ],
                     "url":""
                   },
                   {
