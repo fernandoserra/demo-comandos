@@ -104,7 +104,7 @@
                   {
                     "comando": "citool",
                     "categoria":"",
-                    "descripcion": "",
+                    "descripcion": "git-citool - Alternativa gráfica a git-commit.  Una interfaz gráfica basada en Tcl / Tk para revisar los archivos modificados, ubicarlos en el índice, ingresar un mensaje de confirmación y registrar el nuevo compromiso en la rama actual.",
                     "show":true,
                     "ejemplos":[],
                     "url":""
