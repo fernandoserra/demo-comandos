@@ -622,9 +622,11 @@
                   {
                     "comando": "show-branch",
                     "categoria":"Interrogadores",
-                    "descripcion": "",
+                    "descripcion": "Mostrar ramas y sus commits",
                     "show":true,
-                    "ejemplos":[],
+                    "ejemplos":[
+                      {"ejemplo":"git show-branch "}
+                    ],
                     "url":""
                   },
                   {
