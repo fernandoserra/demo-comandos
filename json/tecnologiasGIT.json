@@ -625,7 +625,8 @@
                     "descripcion": "Mostrar ramas y sus commits",
                     "show":true,
                     "ejemplos":[
-                      {"ejemplo":"git show-branch "}
+                      {"ejemplo":"git show-branch "},
+                      {"ejemplo":"git show-branch -r #Muestra las ramas de seguimiento remoto."}
                     ],
                     "url":""
                   },
